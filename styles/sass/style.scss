@@ -1,6 +1,15 @@
 //VARIABLE DECLARATIONS
+//COLORS
+$greenish-cyan: #50E3C2;
+$black: #2C2C2C;
+$ice-blue: #FAFFFE;
+$twilight-blue: #063974;
+$light-light-blue: #D2E9F1;
+$spruce: #0C5F4C;
 
-
+// FONTS
+$lato:'Lato', sans-serif;
+$playfair:'Playfair Display SC', serif;
 
 // IMPORTING OF PARTIALS
 @import "setup";
@@ -9,4 +18,24 @@
 //GENERAL STYLES
 body {
     font-size: 62.5%;
+}
+
+h1 {
+    font-family: $playfair;
+    font-size: 11.12rem;
+    text-decoration: italic;
+}
+
+h2 {
+    font-family: lato;
+    font-size: 8.7rem;
+    font-weight: bold;
+    letter-spacing: 9px;
+}
+
+h3 {
+    font-family: lato;
+    font-size: 6.2rem;
+    font-weight: bold;
+    letter-spacing: 9px;
 }
