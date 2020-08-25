@@ -1,41 +1,71 @@
 //VARIABLE DECLARATIONS
 //COLORS
-$greenish-cyan: #50E3C2;
-$black: #2C2C2C;
-$ice-blue: #FAFFFE;
-$twilight-blue: #063974;
-$light-light-blue: #D2E9F1;
-$spruce: #0C5F4C;
+$accent-color: #50E3C2;
+$primary-text-color: #2C2C2C;
+$secondary-bg-color: #FAFFFE;
+$button-color: #063974;
+$primary-bg-color: #D2E9F1;
+$secondary-text-color: #0C5F4C;
 
 // FONTS
-$lato:'Lato', sans-serif;
-$playfair:'Playfair Display SC', serif;
+$primary-font:'Lato', sans-serif;
+$secondary-font:'Playfair Display SC', serif;
+
+// MIXINS
+@mixin custom-h1 ($size, $spacing){
+    font-family: $primary-font;
+    font-size: $size;
+    font-weight: bold;
+    line-height: 58px;
+    letter-spacing: $spacing;
+}
+
+@mixin logo-variations ($color, $spacing){
+    color: $color;
+    font-family: $secondary-font;
+    font-style: italic;
+    text-tranform: uppercase;
+    letter-spacing: $spacing;
+}
+
 
 // IMPORTING OF PARTIALS
 @import "setup";
 
 
 //GENERAL STYLES
-body {
+html {
     font-size: 62.5%;
 }
 
-h1 {
-    font-family: $playfair;
-    font-size: 11.12rem;
-    text-decoration: italic;
+body {
+    font-family: $primary-font;
+    font-size: 2rem;
+    line-height: 32px;
+    letter-spacing: 1px;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 h2 {
-    font-family: lato;
-    font-size: 8.7rem;
+    font-family: $primary-font;
+    font-size: 3.5rem;
     font-weight: bold;
-    letter-spacing: 9px;
+    letter-spacing:3.8px;
+    line-height: 58px;
 }
 
 h3 {
-    font-family: lato;
-    font-size: 6.2rem;
+    font-family: $primary-font;
+    font-size: 3rem;
     font-weight: bold;
-    letter-spacing: 9px;
+    letter-spacing: 3.2px;
+    line-height: 58px;
 }
+
+
+
+
