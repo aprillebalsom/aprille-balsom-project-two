@@ -268,7 +268,7 @@ a {
 header {
   background-image: url("../styles/assets/home-image-1.jpg");
   background-size: cover;
-  height: 60vh;
+  height: 90vh;
 }
 
 .header-top {
@@ -312,6 +312,51 @@ nav ul a {
 
 nav ul a:hover, nav ul a:focus {
   color: #50E3C2;
+}
+
+.header-main {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  position: relative;
+}
+
+.header-main h1 {
+  color: #0C5F4C;
+  font-family: "Lato", sans-serif;
+  font-size: 6.2rem;
+  font-weight: bold;
+  line-height: 58px;
+  letter-spacing: 6.7px;
+  text-transform: lowercase;
+  z-index: 10;
+}
+
+.header-main .header-logo {
+  color: #063974;
+  font-family: "Playfair Display SC", serif;
+  font-size: 11.12rem;
+  font-style: italic;
+  font-weight: bold;
+  text-tranform: uppercase;
+  font-weight: bolder;
+  padding-top: 20px;
+  display: inline-block;
+}
+
+.header-main img {
+  max-width: 600px;
+  position: absolute;
+  bottom: 0;
+  left: -10%;
 }
 
 html {

@@ -2,7 +2,7 @@
 header {
     background-image: url("../styles/assets/home-image-1.jpg");
     background-size: cover;
-    height: 60vh;
+    height: 90vh;
 }
 
 .header-top {
@@ -34,5 +34,36 @@ nav {
         &:focus {
             color: $accent-color;
         }}
+    }
+}
+
+.header-main {
+    h1 {
+    @include custom-h1($secondary-text-color, 6.2rem, 6.7px);
+    text-transform: lowercase;
+    z-index: 10;
+    }
+
+    .header-logo {
+        @include logo-variations($button-color, 11.12rem);
+        font-weight: bolder;
+        padding-top: 20px;
+        display: inline-block;
+
+    }
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    // TODO review esther's notes from today for this
+
+    img {
+        max-width: 600px;
+        position: absolute;
+        bottom: 0;
+        left: -10%;
     }
 }
