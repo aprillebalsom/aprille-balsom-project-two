@@ -235,6 +235,12 @@ html {
   overflow: hidden;
 }
 
+.wrapper {
+  max-width: 1020px;
+  width: 85%;
+  margin: 0 auto;
+}
+
 body,
 h1,
 h2,
@@ -247,7 +253,7 @@ a,
 p,
 button {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
 }
 
 li {
@@ -257,6 +263,55 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+header {
+  background-image: url("../styles/assets/home-image-1.jpg");
+  background-size: cover;
+  height: 60vh;
+}
+
+.header-top {
+  height: 10vh;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  color: #50E3C2;
+  font-family: "Playfair Display SC", serif;
+  font-size: 3.46rem;
+  font-style: italic;
+  font-weight: bold;
+  text-tranform: uppercase;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul a {
+  color: #FAFFFE;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+
+nav ul a:hover, nav ul a:focus {
+  color: #50E3C2;
 }
 
 html {
@@ -289,4 +344,8 @@ h3 {
   font-weight: bold;
   letter-spacing: 3.2px;
   line-height: 58px;
+}
+
+p {
+  font-weight: 300;
 }

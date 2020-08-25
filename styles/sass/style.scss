@@ -12,7 +12,7 @@ $primary-font:'Lato', sans-serif;
 $secondary-font:'Playfair Display SC', serif;
 
 // MIXINS
-@mixin custom-h1 ($size, $spacing){
+@mixin custom-h1($size, $spacing) {
     font-family: $primary-font;
     font-size: $size;
     font-weight: bold;
@@ -20,17 +20,19 @@ $secondary-font:'Playfair Display SC', serif;
     letter-spacing: $spacing;
 }
 
-@mixin logo-variations ($color, $spacing){
+@mixin logo-variations($color, $size) {
     color: $color;
     font-family: $secondary-font;
+    font-size: $size;
     font-style: italic;
+    font-weight: bold;
     text-tranform: uppercase;
-    letter-spacing: $spacing;
 }
 
 
 // IMPORTING OF PARTIALS
 @import "setup";
+@import "header";
 
 
 //GENERAL STYLES
@@ -64,6 +66,10 @@ h3 {
     font-weight: bold;
     letter-spacing: 3.2px;
     line-height: 58px;
+}
+
+p {
+    font-weight: 300;
 }
 
 

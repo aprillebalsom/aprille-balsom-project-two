@@ -1,0 +1,38 @@
+//HEADER STYLES START
+header {
+    background-image: url("../styles/assets/home-image-1.jpg");
+    background-size: cover;
+    height: 60vh;
+}
+
+.header-top {
+    height: 10vh;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    @include logo-variations($accent-color, 3.46rem);
+}
+
+nav {
+
+    ul {
+        display: flex;
+        a {
+        color: $secondary-bg-color;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 29px;
+        letter-spacing: 1px;
+        padding: 0 20px;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }}
+    }
+}
