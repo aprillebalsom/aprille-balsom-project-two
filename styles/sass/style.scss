@@ -30,10 +30,21 @@ $secondary-font:'Playfair Display SC', serif;
     text-tranform: uppercase;
 }
 
+@mixin custom-h2 ($color){
+    color: $color;
+    font-family: $primary-font;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing:3.8px;
+    line-height: 58px;
+
+}
+
 
 // IMPORTING OF PARTIALS
 @import "setup";
 @import "header";
+@import "home-visit";
 
 
 //GENERAL STYLES
@@ -53,13 +64,6 @@ img {
     height: auto;
 }
 
-h2 {
-    font-family: $primary-font;
-    font-size: 3.5rem;
-    font-weight: bold;
-    letter-spacing:3.8px;
-    line-height: 58px;
-}
 
 h3 {
     font-family: $primary-font;
@@ -73,6 +77,19 @@ p {
     font-weight: 300;
 }
 
+.button {
+    background-color: $button-color;
+    color: $secondary-bg-color;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 32px;
+    padding: 10px;
+    margin: 5px 0;
+    display: inline-block;
+}
 
 
 
