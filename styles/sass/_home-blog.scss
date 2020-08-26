@@ -1,1 +1,51 @@
 // BLOG CONTAINER SECTION
+.blog {
+    background-color: $primary-bg-color;
+    padding: 80px 0 60px;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .blog-img {
+        width: calc(60% - 100px);
+        position: relative;
+
+
+        .blog-img-1 {
+            box-shadow: 15px 15px $accent-color;
+            position: absolute;
+            top: -30%;
+            left: -20%;
+        }
+        
+        .blog-img-2 {
+            box-shadow: -15px 15px $accent-color;
+            position: absolute;
+            bottom: -30%;
+            right: -20%;
+        }
+    }
+
+    .special-img{
+        order: 10;
+    }
+
+    .blog-text {
+        width: calc(40% - 10px);
+
+        h2 {
+            @include custom-h2($button-color);
+        }
+
+        p {
+            padding: 10px 0 20px;
+        }
+    }
+
+    .text-left {
+        text-align: right;
+    }
+}
