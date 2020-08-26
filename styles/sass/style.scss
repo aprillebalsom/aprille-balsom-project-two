@@ -45,6 +45,8 @@ $secondary-font:'Playfair Display SC', serif;
 @import "header";
 @import "home-visit";
 @import "home-gallery";
+@import "home-about";
+@import "home-blog";
 
 
 //GENERAL STYLES
@@ -65,6 +67,7 @@ img {
 }
 
 h3 {
+    color: $secondary-text-color;
     font-family: $primary-font;
     font-size: 3rem;
     font-weight: bold;
