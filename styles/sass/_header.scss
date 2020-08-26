@@ -6,13 +6,13 @@ header.main {
 }
 
 .header-top,
-.blog-header-top {
+.blog-header-top,
+.contact-header-top {
     height: 10vh;
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .logo {
@@ -31,10 +31,12 @@ nav {
         line-height: 29px;
         letter-spacing: 1px;
         padding: 0 20px;
+
         &:hover,
         &:focus {
             color: $accent-color;
-        }}
+        }
+        }
     }
 }
 
@@ -72,10 +74,12 @@ nav {
 .blog-header {
     background-image: url("../styles/assets/blog-image-1.jpg");
     background-size: cover;
+    background-position: bottom right;
     height: 90vh;
 }
 // TODO fix the spacing
-.blog-header-main {
+.blog-header-main,
+.contact-header-main {
     height: 90vh;
     display: flex;
     align-items: center;
@@ -86,5 +90,11 @@ nav {
     }
 }
 
-
 //CONTACT HEADER STYLES
+.contact-header {
+    background-image: url("../styles/assets/contact-image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+

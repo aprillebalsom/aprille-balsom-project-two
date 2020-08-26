@@ -39,4 +39,16 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+button {
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
 //STRIPPING STYLES ENDS

@@ -1,0 +1,151 @@
+//BLOG POST STYLES
+.blog-post {
+    background-color: $secondary-bg-color;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+
+    .blog-container {
+        width: calc(70% - 40px);
+        position: relative;
+    }
+
+    aside {
+        width: calc(30% - 40px);
+    }
+}
+
+.blog-post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-main-img {
+    box-shadow: 15px 15px $accent-color;
+    position: absolute;
+    top: -10%;      
+}
+
+.blog-post-text {
+    padding-top: 400px;
+    border-right: 5px solid $accent-color;
+    border-bottom: 5px solid $accent-color;
+
+    h2 {
+        @include custom-h2 ($secondary-text-color);
+    }
+
+    .date {
+        color: $button-color;
+        font-weight: lighter;
+        font-style: italic;
+        padding-top: 0;
+         
+        .highlight {
+            font-weight: 700;
+        }
+    }
+
+    p {
+        padding: 15px 0;
+        &:last-of-type {
+            padding-bottom: 60px;
+        }
+    }
+}
+
+// COMMENTS SECTION STYLES
+.comments-container {
+    padding: 60px 0 30px;
+
+    h3 {
+        // TODO add in styling
+        padding-bottom: 40px;
+    }
+}
+
+.comment-1, 
+.comment-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+
+    .comment-img {
+        width: calc(20% - 20px);
+    }
+
+    .comment-text {
+        width: calc(80% - 20px);
+
+        h4 {
+            color: $button-color;
+            padding-bottom: 10px;
+        }
+    }
+}
+
+// COMMENTS FORM STYLES
+.comments {
+
+    .form-flex {
+        display: flex;
+        justify-content: space-between;
+
+        input.comments-form {
+            border-bottom: 3px solid $accent-color;
+            width: calc(50% - 20px);
+            padding: 0 0 30px 25px;
+            margin-bottom: 30px;
+        }
+    }
+
+    textarea.comments-form {
+        border: 3px solid $accent-color;
+        width: 100%;
+        padding: 25px 0 0 25px;
+        margin-bottom: 30px;
+        resize: none;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+.comments-form {
+    background-color: $secondary-bg-color;
+
+    &::placeholder {
+        font-family: $primary-font;
+        font-weight: light;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+}
+
+// ASIDE STYLES
+.mission,
+.recent-posts {
+    padding: 10px 0;
+
+    h4 {
+        color: $button-color;
+        padding: 10px 0;
+    }
+
+    a {
+        color: $secondary-text-color;
+        font-weight: bolder;
+    }
+
+    li {
+       font-weight: 300;
+
+       &::before {
+            content: "•";
+            color: $accent-color;
+            padding-right: 10px;
+        }
+    }
+}

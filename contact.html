@@ -12,11 +12,11 @@
 </head>
 <body>
     <!-- START OF HEADER CONTENT -->
-    <header id="contact">
+    <header class="contact-header"id="contact">
 
-        <section class="header-container wrapper">
+        <section class= "wrapper">
         
-            <div class="header-top">
+            <div class="contact-header-top">
                 <a class="logo" href="#home">Beachstays</a>
         
                 <nav>
@@ -29,7 +29,7 @@
                 </nav>
             </div>
         
-            <div class="header-contact-main">
+            <div class="contact-header-main">
         
                 <h1>Get in Touch</span></h1>
         
@@ -40,20 +40,21 @@
     </header>
     <!-- END OF HEADER -->
 
-    <!-- START OF MAIN CONTENT -->
 
+    <!-- START OF MAIN CONTENT -->
     <main>
         <div class="wrapper">
             
             <!-- START OF FORM -->
             <form action="">
                 <fieldset>
-                    <label class="sr-only" for="user-name"></label>
+                    <label class="sr-only" for="user-name">Enter your name</label>
                     <input type="text" id="user-name" placeholder="Name" >
                     
-                    <label class="sr-only" for="user-email"></label>
+                    <label class="sr-only" for="user-email">Enter your email address</label>
                     <input type="email" id="user-email" placeholder="Email Address">
                     
+                    <!-- TODO  add label for sr-only text-->
                     <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     
                     <button class="button" type="submit">Submit</button>

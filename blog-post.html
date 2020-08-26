@@ -44,7 +44,7 @@
 
 
     <!-- START OF MAIN -->
-    <main>
+    <main class="blog-post">
 
         <!-- START OF BLOG SECTION -->
         <div class="blog-container">
@@ -53,12 +53,12 @@
             <section class="blog-post-container">
 
                 <!-- TODO does this need a wrapper? -->
-                <img src="./styles/assets/post-image.jpg" alt="A pathway leading up to a blue wooden beach house">
+                <img class="blog-main-img" src="./styles/assets/post-image.jpg" alt="A pathway leading up to a blue wooden beach house">
 
-                <div class="wrapper">
-                    <div class="blog-post-text">
+                <div class="blog-post-text">
+                    <div class="wrapper">
                         <h2>Five days of ocean seas</h2>
-                        <h4>Monday January 21st, 2019 by Bora</h4>
+                        <p class="date">Monday January 21st, 2019 by <strong class="highlight">Bora</strong></p>
 
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ab architecto est aut laboriosam repudiandae, quaerat fugit enim natus molestias? Sunt laboriosam tempore illum quo eveniet. Similique soluta recusandae sunt nostrum eius laudantium veritatis facilis.</p>
 
@@ -77,41 +77,48 @@
             <section class="comments-container">
 
                 <div class="wrapper">
+                    <!-- TODO confirm the headings make sense -->
+                    <h3>Comments:</h3>
+                    
                     <div class="comment-1">
 
-                        <img src="./styles/assets/comment-image.jpg" alt="Profile picture of commenter, Reyansh">
+                        <div class="comment-img">
+                            <img src="./styles/assets/comment-image.jpg" alt="Profile picture of commenter, Reyansh">
+                        </div>
 
-                        <div class="comment-1-text">
+                        <div class="comment-text">
                             <h4>Tuesday October 9th, 2019 by Reyansh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit, quaerat recusandae amet cumque natus</p>
                         </div>
                     </div>
 
                     <div class="comment-2">
 
-                        <img src="./styles/assets/comment-image2.jpg" alt="Profile picture of commenter, Olivia">
+                        <div class="comment-img">
+                            <img src="./styles/assets/comment-image2.jpg" alt="Profile picture of commenter, Olivia">
+                        </div>
 
-                        <div class="comment-2-text">
+                        <div class="comment-text">
                             <h4>Wednesday October 10th, 2019 by Olivia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem
-                                eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam remeos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
                         </div>
 
                     </div>
 
-                    <form action="POST">
+                    <form class="comments" action="">
                       
-                        <label for=""></label>
-                        <input type="text">
+                        <div class="form-flex">
+                            <label class="sr-only" for="commenters-name">Enter your name</label>
+                            <input class="comments-form" type="text" id="commenters-name" placeholder="Name">
+                        
+                            <label class="sr-only" for="commenters-email">Enter your email address</label>
+                            <input class="comments-form" type="email" id="commenters-email" placeholder="Email Address">
+                        </div>
 
-                        <label for=""></label>
-                        <input type="text">
+                        <!-- TODO  add label for sr-only text-->
+                        <textarea class="comments-form" name="comment" cols="30" rows="7" placeholder="Comment"></textarea>
 
-                        <!-- TEXTBOX HERE -->
-                        <label for=""></label>
-                        <input type="text">
-
-                        <button type="submit">Post comment</button>
+                        <button class="button" type="submit">Post comment</button>
 
                     </form>
                 </div>
@@ -127,23 +134,24 @@
             <!-- TODO does this need a wrapper? -->
             <img src="./styles/assets/sidebar-image.jpg" alt="Two beach houses along the coastline">
 
+        
             <div class="mission">
-                    <h3>Our mission</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem fugiat corporis!</p>
-                    <a href="">Find out more.</a>
-                    <!-- TODO add link -->
-                </div>
-
-
-                <div class="recent-posts">
-                    <h3>Recent Posts</h3>
-                    <ul>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                    </ul>
-                </div>
+                <h4>Our mission</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem fugiat corporis!</p>
+                <a href="#">Find out more.</a>
+            </div>
+            
+        
+            <div class="recent-posts">
+                <h4>Recent Posts</h4>
+                <ul>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                </ul>
+            </div>
+            
         </aside> 
         <!-- END OF ASIDE SECTION -->
     </main>

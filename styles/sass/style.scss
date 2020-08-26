@@ -5,7 +5,7 @@ $primary-bg-color: #50E3C250;
 $primary-text-color: #2C2C2C;
 $secondary-bg-color: #FAFFFE;
 $button-color: #063974;
-$light-blue: #D2E9F1;
+$light-blue: #D2E9F150;
 $secondary-text-color: #0C5F4C;
 
 // FONTS
@@ -36,7 +36,16 @@ $secondary-font:'Playfair Display SC', serif;
     font-family: $primary-font;
     font-size: 3.5rem;
     font-weight: bold;
-    letter-spacing:3.8px;
+    letter-spacing: 3.8px;
+    line-height: 58px;
+}
+
+@mixin custom-h3 ($color, $size, $weight){
+    color: $color;
+    font-family: $primary-font;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: 3.2px;
     line-height: 58px;
 }
 
@@ -48,6 +57,8 @@ $secondary-font:'Playfair Display SC', serif;
 @import "home-about";
 @import "home-blog";
 @import "home-contest";
+
+@import "blog-post";
 
 
 //GENERAL STYLES
@@ -67,14 +78,6 @@ img {
     height: auto;
 }
 
-h3 {
-    color: $secondary-text-color;
-    font-family: $primary-font;
-    font-size: 3rem;
-    font-weight: bold;
-    letter-spacing: 3.2px;
-    line-height: 58px;
-}
 
 p {
     font-weight: 300;
