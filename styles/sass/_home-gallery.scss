@@ -1,0 +1,13 @@
+.gallery-container {
+    background-color: #50E3C250;
+    padding: 70px 0;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+
+        li {
+            width: calc((100%/3) - 20px);
+        }
+    }
+}

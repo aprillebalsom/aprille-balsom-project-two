@@ -1,10 +1,11 @@
 //VARIABLE DECLARATIONS
 //COLORS
 $accent-color: #50E3C2;
+$primary-bg-color: #50E3C250;
 $primary-text-color: #2C2C2C;
 $secondary-bg-color: #FAFFFE;
 $button-color: #063974;
-$primary-bg-color: #D2E9F1;
+$light-blue: #D2E9F1;
 $secondary-text-color: #0C5F4C;
 
 // FONTS
@@ -37,14 +38,13 @@ $secondary-font:'Playfair Display SC', serif;
     font-weight: bold;
     letter-spacing:3.8px;
     line-height: 58px;
-
 }
-
 
 // IMPORTING OF PARTIALS
 @import "setup";
 @import "header";
 @import "home-visit";
+@import "home-gallery";
 
 
 //GENERAL STYLES
@@ -63,7 +63,6 @@ img {
     width: 100%;
     height: auto;
 }
-
 
 h3 {
     font-family: $primary-font;

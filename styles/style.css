@@ -401,6 +401,24 @@ nav ul a:hover, nav ul a:focus {
           box-shadow: -15px 15px #50E3C2;
 }
 
+.gallery-container {
+  background-color: #50E3C250;
+  padding: 70px 0;
+}
+
+.gallery-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-container ul li {
+  width: calc((100%/3) - 20px);
+}
+
 html {
   font-size: 62.5%;
 }
