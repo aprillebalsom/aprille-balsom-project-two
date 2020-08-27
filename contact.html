@@ -12,9 +12,10 @@
 </head>
 <body>
     <!-- START OF HEADER CONTENT -->
-    <header class="contact-header"id="contact">
+    <header class="contact-header" id="contact">
 
         <section class= "wrapper">
+            <!-- TODO add class based on others -->
         
             <div class="contact-header-top">
                 <a class="logo" href="#home">Beachstays</a>
@@ -30,11 +31,9 @@
             </div>
         
             <div class="contact-header-main">
-        
-                <h1>Get in Touch</span></h1>
-        
+                <h1>Get in Touch</h1>
             </div>
-        
+
         </section>
 
     </header>
@@ -42,40 +41,39 @@
 
 
     <!-- START OF MAIN CONTENT -->
-    <main>
-        <div class="wrapper">
+    <main class="contact-main">
+        <div class="contact-flex wrapper">
             
             <!-- START OF FORM -->
-            <form action="">
-                <fieldset>
+            <form class="contact-form" action="">
+
+                <div class="form-input">
                     <label class="sr-only" for="user-name">Enter your name</label>
-                    <input type="text" id="user-name" placeholder="Name" >
-                    
+                    <input type="text" id="user-name" placeholder="Name">
+                
                     <label class="sr-only" for="user-email">Enter your email address</label>
                     <input type="email" id="user-email" placeholder="Email Address">
-                    
-                    <!-- TODO  add label for sr-only text-->
-                    <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    
-                    <button class="button" type="submit">Submit</button>
-                </fieldset>
+                </div>
+                
+                <!-- TODO  add label for sr-only text-->
+                <textarea name="message" cols="30" rows="7" placeholder="Message"></textarea>
+                
+                <button class="button" type="submit">Submit</button>
             </form>
 
             <!-- START OF CONTACT INFO -->
             <div class="contact-info">
 
-                <div class="contact-icons">
-                    <ul>
-                        <li><i class="fab fa-facebook-f"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                        <li><i class="fab fa-whatsapp"></i></li>
-                    </ul>
-                </div>
-
+                <ul class="contact-icons">
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ul>
+        
                 <div class="contact-text">
                     <h4>info@email.com</h4>
-                    <p>123-456-7890</p>
+                    <p>123 - 456 - 7890</p>
                     <p>123 Queen Street West, Unit 10</p>
                     <p>Toronto, Ontario</p>
                     <p>M5V2D5</p>

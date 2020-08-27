@@ -709,14 +709,14 @@ nav ul a:hover, nav ul a:focus {
           justify-content: space-between;
 }
 
-.comments .form-flex input.comments-form {
+.comments .form-flex input {
   border-bottom: 3px solid #50E3C2;
   width: calc(50% - 20px);
   padding: 0 0 30px 25px;
   margin-bottom: 30px;
 }
 
-.comments textarea.comments-form {
+.comments textarea {
   border: 3px solid #50E3C2;
   width: 100%;
   padding: 25px 0 0 25px;
@@ -787,6 +787,115 @@ nav ul a:hover, nav ul a:focus {
   content: "•";
   color: #50E3C2;
   padding-right: 10px;
+}
+
+.contact-main {
+  background-color: #FAFFFE;
+}
+
+.contact-main .contact-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-main .contact-flex .contact-form {
+  background-color: white;
+  width: calc(75% - 40px);
+  padding: 50px;
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
+  position: relative;
+  top: -150px;
+}
+
+.form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-input input {
+  border-bottom: 3px solid #50E3C2;
+  width: calc(50% - 15px);
+  padding: 20px 0 20px 25px;
+  margin-bottom: 50px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+textarea {
+  border: 3px solid #50E3C2;
+  width: 100%;
+  padding: 25px 0 0 25px;
+  margin-bottom: 50px;
+  resize: none;
+}
+
+button {
+  width: 100%;
+}
+
+.contact-info {
+  width: calc(25% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 80px;
+}
+
+.contact-info .contact-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-info .contact-icons i {
+  padding: 10px 20px 10px 0;
+}
+
+.contact-info .contact-text h4 {
+  padding: 10px 0 15px;
 }
 
 html {

@@ -1,0 +1,82 @@
+//CONTACT STYLES
+.contact-main {
+    background-color: $secondary-bg-color;
+   
+
+    .contact-flex {
+        display: flex;
+        justify-content: space-between;
+
+        .contact-form {
+            background-color: white;
+            width: calc(75% - 40px);
+            padding: 50px;
+            box-shadow: 15px 15px $accent-color;
+            position: relative;
+            top: -150px;
+        }
+
+    }   
+}
+
+.form-input {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        border-bottom: 3px solid $accent-color;
+        width: calc(50% - 15px);
+        padding: 20px 0 20px 25px;
+        margin-bottom: 50px;
+    }
+
+
+}
+
+input, 
+textarea {
+    &::placeholder {
+        font-family: $primary-font;
+        font-weight: light;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+
+}
+
+textarea {
+    border: 3px solid $accent-color;
+    width: 100%; 
+    padding: 25px 0 0 25px;
+    margin-bottom: 50px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+}
+
+
+.contact-info {
+    width: calc(25% - 40px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  
+    .contact-icons {
+        display: flex;
+
+        i {
+            padding: 10px 20px 10px 0;
+        }
+
+    }
+
+    .contact-text {
+        h4 {
+            padding: 10px 0 15px;
+        }
+    }
+
+}
+
