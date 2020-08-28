@@ -238,7 +238,7 @@ html {
 
 .wrapper {
   max-width: 1280px;
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -394,14 +394,13 @@ fieldset {
 
 .blog-header-main,
 .contact-header-main {
-  height: 90vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .blog-header-main h1,
@@ -613,8 +612,9 @@ fieldset {
 
 .blog-post .blog-container {
   width: calc(70% - 40px);
+  margin-bottom: -120px;
   position: relative;
-  top: -250px;
+  top: -200px;
 }
 
 .blog-post-container {
@@ -672,6 +672,12 @@ fieldset {
 }
 
 .comments-container h3 {
+  color: #2C2C2C;
+  font-family: "Lato", sans-serif;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  letter-spacing: 3.2px;
+  line-height: 58px;
   padding-bottom: 40px;
 }
 
@@ -702,64 +708,22 @@ fieldset {
   padding-bottom: 10px;
 }
 
-.comments .form-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.comments .form-flex input {
-  border-bottom: 3px solid #50E3C2;
+.comments-form .form-flex input {
   width: calc(50% - 20px);
-  padding: 0 0 30px 25px;
+  padding: 0 0 30px 30px;
+}
+
+.comments-form input,
+.comments-form textarea {
   margin-bottom: 30px;
 }
 
-.comments textarea {
-  border: 3px solid #50E3C2;
-  width: 100%;
-  padding: 25px 0 0 25px;
-  margin-bottom: 30px;
-  resize: none;
-}
-
-.comments button {
-  width: 100%;
+.comments-form textarea {
+  padding: 30px 0 0 30px;
 }
 
 .comments-form {
   background-color: #FAFFFE;
-}
-
-.comments-form::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-.comments-form:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-.comments-form::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-.comments-form::placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
 }
 
 aside {
@@ -800,7 +764,7 @@ aside {
   background-color: #FAFFFE;
 }
 
-.contact-main .contact-flex {
+.contact-main .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -809,7 +773,7 @@ aside {
           justify-content: space-between;
 }
 
-.contact-main .contact-flex .contact-form {
+.contact-form {
   background-color: white;
   width: calc(75% - 40px);
   padding: 50px;
@@ -819,64 +783,18 @@ aside {
   top: -150px;
 }
 
-.form-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.form-input input {
-  border-bottom: 3px solid #50E3C2;
+.contact-form .form-flex input {
   width: calc(50% - 15px);
   padding: 20px 0 20px 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
   margin-bottom: 50px;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  font-family: "Lato", sans-serif;
-  font-weight: light;
-  line-height: 32px;
-  letter-spacing: 2px;
-}
-
-textarea {
-  border: 3px solid #50E3C2;
-  width: 100%;
+.contact-form textarea {
   padding: 25px 0 0 25px;
-  margin-bottom: 50px;
-  resize: none;
-}
-
-button {
-  width: 100%;
 }
 
 .contact-info {
@@ -941,6 +859,62 @@ p {
 
 .button:hover, .button:focus {
   background-color: #0C5F4C;
+}
+
+.form-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-flex input {
+  border-bottom: 2px solid #50E3C2;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: "Lato", sans-serif;
+  font-weight: light;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+
+textarea,
+button {
+  width: 100%;
+}
+
+textarea {
+  border: 2px solid #50E3C2;
+  padding: 25px 0 0 25px;
+  resize: none;
 }
 
 footer {

@@ -6,8 +6,10 @@
 
     .blog-container {
         width: calc(70% - 40px);
+        margin-bottom: -120px;
         position: relative;
-        top: -250px;
+        top: -200px;
+        
     }
 }
 
@@ -17,6 +19,7 @@
     justify-content: space-between;
 }
 
+// TODO try to fix gap between columns
 .blog-main-img {
     box-shadow: 15px 15px $accent-color;  
     position: relative;
@@ -53,7 +56,7 @@
     padding: 60px 0 30px 40px;
 
     h3 {
-        // TODO add in styling
+        @include custom-h3 ($primary-text-color, 2.8rem, bolder);
         padding-bottom: 40px;
     }
 }
@@ -79,42 +82,30 @@
 }
 
 // COMMENTS FORM STYLES
-.comments {
+.comments-form {
 
     .form-flex {
-        display: flex;
-        justify-content: space-between;
-
-        input {
-            border-bottom: 3px solid $accent-color;
+       input {
+            
             width: calc(50% - 20px);
-            padding: 0 0 30px 25px;
-            margin-bottom: 30px;
+            padding: 0 0 30px 30px;
         }
     }
 
+    input,
     textarea {
-        border: 3px solid $accent-color;
-        width: 100%;
-        padding: 25px 0 0 25px;
         margin-bottom: 30px;
-        resize: none;
+    }
+    
+    textarea {
+        padding: 30px 0 0 30px;
     }
 
-    button {
-        width: 100%;
-    }
 }
 
 .comments-form {
     background-color: $secondary-bg-color;
-
-    &::placeholder {
-        font-family: $primary-font;
-        font-weight: light;
-        line-height: 32px;
-        letter-spacing: 2px;
-    }
+ 
 }
 
 // ASIDE STYLES

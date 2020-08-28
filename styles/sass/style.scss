@@ -105,6 +105,37 @@ p {
     }
 }
 
+
+.form-flex {
+    display: flex;
+    justify-content: space-between;
+
+    input {
+        border-bottom: 2px solid $accent-color;
+    }
+}
+
+input, 
+textarea {
+    &::placeholder {
+        font-family: $primary-font;
+        font-weight: light;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+}
+
+textarea, 
+button {
+    width: 100%;
+}
+
+textarea {
+    border: 2px solid $accent-color;
+    padding: 25px 0 0 25px;
+    resize: none;
+}
+
 footer {
     background-color: $primary-text-color;
     color: $secondary-bg-color;

@@ -85,7 +85,7 @@
 
                         <div class="comment-text">
                             <h4>Tuesday October 9th, 2019 by Reyansh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.Lorem ipsum dolor sit amet consectetur adipisicing elit, quaerat recusandae amet cumque natus</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
                         </div>
                     </div>
 
@@ -97,23 +97,25 @@
 
                         <div class="comment-text">
                             <h4>Wednesday October 10th, 2019 by Olivia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam remeos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam remeos consequatur reprehenderit.</p>
                         </div>
 
                     </div>
 
-                    <form class="comments" action="">
+                    <form class="comments-form" action="">
                       
                         <div class="form-flex">
                             <label class="sr-only" for="commenters-name">Enter your name</label>
-                            <input class="comments-form" type="text" id="commenters-name" placeholder="Name">
+                            <!-- class="comments-form" -->
+                            <input type="text" id="commenters-name" placeholder="Name">
                         
                             <label class="sr-only" for="commenters-email">Enter your email address</label>
-                            <input class="comments-form" type="email" id="commenters-email" placeholder="Email Address">
+
+                            <input type="email" id="commenters-email" placeholder="Email Address">
                         </div>
 
-                        <!-- TODO  add label for sr-only text-->
-                        <textarea class="comments-form" name="comment" cols="30" rows="7" placeholder="Comment"></textarea>
+                        <label class="sr-only" for="comment-textbox"> Write your message in here</label>
+                        <textarea id="comments-textbox" class="comments-form" name="comment" cols="30" rows="7" placeholder="Comment"></textarea>
 
                         <button class="button" type="submit">Post comment</button>
 
@@ -134,7 +136,7 @@
         
             <div class="mission">
                 <h4>Our mission</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolorem fugiat corporis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeanment dolorem fugiat corporis!</p>
                 <a href="#">Find out more.</a>
             </div>
             

@@ -1,5 +1,4 @@
 //GENERAL HEADER STYLES
-
 .home-header,
 .blog-header,
 .contact-header {
@@ -94,10 +93,9 @@ transition: all .5s;
 // TODO fix the spacing
 .blog-header-main,
 .contact-header-main {
-    height: 90vh;
+    height: 100%;
     display: flex;
     align-items: center;
-    position: relative;
 
     h1 {
     @include custom-h1($secondary-bg-color, 8.7rem, 9px);

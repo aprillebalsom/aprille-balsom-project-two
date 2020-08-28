@@ -41,12 +41,12 @@
 
     <!-- START OF MAIN CONTENT -->
     <main class="contact-main">
-        <div class="contact-flex wrapper">
+        <div class="contact-container wrapper">
             
             <!-- START OF FORM -->
             <form class="contact-form" action="">
-
-                <div class="form-input">
+              
+                <div class="form-flex">
                     <label class="sr-only" for="user-name">Enter your name</label>
                     <input type="text" id="user-name" placeholder="Name">
                 
@@ -54,10 +54,12 @@
                     <input type="email" id="user-email" placeholder="Email Address">
                 </div>
                 
-                <!-- TODO  add label for sr-only text-->
-                <textarea name="message" cols="30" rows="7" placeholder="Message"></textarea>
+    
+                <label class="sr-only" for="contact-textbox"> Write your message in here</label>
+                <textarea id="contact-textbox" name="message" cols="30" rows="7" placeholder="Message"></textarea>
                 
                 <button class="button" type="submit">Submit</button>
+
             </form>
 
             <!-- START OF CONTACT INFO -->
