@@ -11,21 +11,21 @@
 
     .blog-img {
         width: calc(60% - 100px);
-        position: relative;
-
+        
+        .blog-img-1,
+        .blog-img-2 {
+            box-shadow: 15px 15px $accent-color;
+            position: relative;
+        }
 
         .blog-img-1 {
-            box-shadow: 15px 15px $accent-color;
-            position: absolute;
-            top: -40%;
-            left: -20%;
+            top: -100px;
+            left: -100px;
         }
         
         .blog-img-2 {
-            box-shadow: -15px 15px $accent-color;
-            position: absolute;
-            bottom: -30%;
-            right: -20%;
+            bottom: -100px;
+            right: -100px;
         }
     }
 

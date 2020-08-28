@@ -19,10 +19,12 @@
 
 .blog-main-img {
     box-shadow: 15px 15px $accent-color;  
+    position: relative;
+    right: 15px;
 }
 
 .blog-post-text {
-    padding: 80px 30px 40px;
+    padding: 80px 0 40px 40px;
     border-right: 5px solid $accent-color;
     border-bottom: 5px solid $accent-color;
 
@@ -48,7 +50,7 @@
 
 // COMMENTS SECTION STYLES
 .comments-container {
-    padding: 60px 0 30px;
+    padding: 60px 0 30px 40px;
 
     h3 {
         // TODO add in styling
@@ -120,6 +122,7 @@ aside {
     width: calc(30% - 40px);
     padding-top: 80px;
 }
+
 .mission,
 .recent-posts {
     padding: 10px 0;
