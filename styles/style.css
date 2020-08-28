@@ -932,6 +932,10 @@ p {
   display: inline-block;
 }
 
+.button:hover, .button:focus {
+  background-color: #0C5F4C;
+}
+
 footer {
   background-color: #2C2C2C;
   color: #FAFFFE;

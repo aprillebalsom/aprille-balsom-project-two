@@ -52,14 +52,18 @@ $secondary-font:'Playfair Display SC', serif;
 // IMPORTING OF PARTIALS
 @import "setup";
 @import "header";
+
+//HOME PAGE PARTIALS
 @import "home-visit";
 @import "home-gallery";
 @import "home-about";
 @import "home-blog";
 @import "home-contest";
 
+//ADDITIONAL PAGE PARTIALS
 @import "blog-post";
 @import "contact";
+
 
 //GENERAL STYLES
 html {
@@ -94,6 +98,11 @@ p {
     padding: 10px;
     margin: 5px 0;
     display: inline-block;
+
+    &:hover,
+    &:focus {
+        background-color: $secondary-text-color;
+    }
 }
 
 footer {
