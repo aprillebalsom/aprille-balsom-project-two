@@ -1,17 +1,13 @@
 //BLOG POST STYLES
 .blog-post {
     background-color: $secondary-bg-color;
-    padding: 80px 0;
     display: flex;
     justify-content: space-between;
 
     .blog-container {
         width: calc(70% - 40px);
         position: relative;
-    }
-
-    aside {
-        width: calc(30% - 40px);
+        top: -250px;
     }
 }
 
@@ -22,13 +18,11 @@
 }
 
 .blog-main-img {
-    box-shadow: 15px 15px $accent-color;
-    position: absolute;
-    top: -10%;      
+    box-shadow: 15px 15px $accent-color;  
 }
 
 .blog-post-text {
-    padding-top: 400px;
+    padding: 80px 30px 40px;
     border-right: 5px solid $accent-color;
     border-bottom: 5px solid $accent-color;
 
@@ -49,9 +43,6 @@
 
     p {
         padding: 15px 0;
-        &:last-of-type {
-            padding-bottom: 60px;
-        }
     }
 }
 
@@ -125,6 +116,10 @@
 }
 
 // ASIDE STYLES
+aside {
+    width: calc(30% - 40px);
+    padding-top: 80px;
+}
 .mission,
 .recent-posts {
     padding: 10px 0;

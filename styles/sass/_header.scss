@@ -1,82 +1,95 @@
-//MAIN HEADER STYLES
-header.main {
-    background-image: url("../styles/assets/home-image-1.jpg");
+//GENERAL HEADER STYLES
+
+.home-header,
+.blog-header,
+.contact-header {
     background-size: cover;
     height: 90vh;
 }
 
-.header-top,
-.blog-header-top,
-.contact-header-top {
-    height: 10vh;
-    padding-top: 20px;
+.header-container {
+    display: flex;
+	flex-direction: column;
+    height: 100%;
+    
+    .header-top {
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
 
-.logo {
-    @include logo-variations($accent-color, 3.46rem);
-}
-
-nav {
-
-    ul {
-        display: flex;
-        
-        a {
-        color: $secondary-bg-color;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 29px;
-        letter-spacing: 1px;
-        padding: 0 20px;
-
-        &:hover,
-        &:focus {
-            color: $accent-color;
+        .logo {
+            @include logo-variations($accent-color, 3.46rem);
+            padding-left: 0;
         }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
 
-.header-main {
-    height: 90vh;
+.header-top a {
+color: $secondary-bg-color;
+text-transform: uppercase;
+font-size: 2rem;
+font-weight: bold;
+line-height: 29px;
+letter-spacing: 1px;
+padding: 0 20px;
+transition: all .5s;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+        font-size: 2.2rem;
+    }
+}
+
+
+// HOME HEADER STYLES
+.home-header {
+    background-image: url("../styles/assets/home-image-1.jpg");
+}
+
+.home-header-main {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    // TODO review esther's notes from today for this
-
+   
     h1 {
         @include custom-h1($secondary-text-color, 6.2rem, 6.7px);
         text-transform: lowercase;
-        z-index: 10;
+        // position: relative;
+        // right: -340px;
+        // z-index: 10;
+
+        .header-logo-special {
+            @include logo-variations($button-color, 11.12rem);
+            font-weight: bolder;
+            padding-top: 20px;
+            display: inline-block;
+
+        }
+
     }
 
-    .header-logo {
-        @include logo-variations($button-color, 11.12rem);
-        font-weight: bolder;
-        padding-top: 20px;
-        display: inline-block;
-
-    }
-
-    img {
-        max-width: 600px;
-        position: absolute;
-        bottom: 0;
-        left: -10%;
-    }
 }
+
+// .home-header-img {
+//     width: 45%;
+//     position: relative;
+//     bottom: 400px;
+//     left: 0;
+// }
 
 //BLOG HEADER STYLES
 .blog-header {
     background-image: url("../styles/assets/blog-image-1.jpg");
-    background-size: cover;
     background-position: bottom right;
-    height: 90vh;
 }
 // TODO fix the spacing
 .blog-header-main,
@@ -94,8 +107,6 @@ nav {
 //CONTACT HEADER STYLES
 .contact-header {
     background-image: url("../styles/assets/contact-image-1.jpg");
-    background-size: cover;
     background-position: center;
-    height: 90vh;
 }
 

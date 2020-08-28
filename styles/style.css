@@ -237,7 +237,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1020px;
+  max-width: 1280px;
   width: 85%;
   margin: 0 auto;
 }
@@ -278,17 +278,26 @@ fieldset {
   margin: 0;
 }
 
-header.main {
-  background-image: url("../styles/assets/home-image-1.jpg");
+.home-header,
+.blog-header,
+.contact-header {
   background-size: cover;
   height: 90vh;
 }
 
-.header-top,
-.blog-header-top,
-.contact-header-top {
-  height: 10vh;
-  padding-top: 20px;
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.header-container .header-top {
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -300,22 +309,29 @@ header.main {
           align-items: center;
 }
 
-.logo {
+.header-container .header-top .logo {
   color: #50E3C2;
   font-family: "Playfair Display SC", serif;
   font-size: 3.46rem;
   font-style: italic;
   font-weight: bold;
   text-tranform: uppercase;
+  padding-left: 0;
 }
 
-nav ul {
+.header-container .header-top ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-nav ul a {
+.header-top a {
   color: #FAFFFE;
   text-transform: uppercase;
   font-size: 2rem;
@@ -323,14 +339,21 @@ nav ul a {
   line-height: 29px;
   letter-spacing: 1px;
   padding: 0 20px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
-nav ul a:hover, nav ul a:focus {
+.header-top a:hover, .header-top a:focus {
   color: #50E3C2;
+  font-size: 2.2rem;
 }
 
-.header-main {
-  height: 90vh;
+.home-header {
+  background-image: url("../styles/assets/home-image-1.jpg");
+}
+
+.home-header-main {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -340,10 +363,9 @@ nav ul a:hover, nav ul a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
-.header-main h1 {
+.home-header-main h1 {
   color: #0C5F4C;
   font-family: "Lato", sans-serif;
   font-size: 6.2rem;
@@ -351,10 +373,9 @@ nav ul a:hover, nav ul a:focus {
   line-height: 58px;
   letter-spacing: 6.7px;
   text-transform: lowercase;
-  z-index: 10;
 }
 
-.header-main .header-logo {
+.home-header-main h1 .header-logo-special {
   color: #063974;
   font-family: "Playfair Display SC", serif;
   font-size: 11.12rem;
@@ -366,18 +387,9 @@ nav ul a:hover, nav ul a:focus {
   display: inline-block;
 }
 
-.header-main img {
-  max-width: 600px;
-  position: absolute;
-  bottom: 0;
-  left: -10%;
-}
-
 .blog-header {
   background-image: url("../styles/assets/blog-image-1.jpg");
-  background-size: cover;
   background-position: bottom right;
-  height: 90vh;
 }
 
 .blog-header-main,
@@ -404,9 +416,7 @@ nav ul a:hover, nav ul a:focus {
 
 .contact-header {
   background-image: url("../styles/assets/contact-image-1.jpg");
-  background-size: cover;
   background-position: center;
-  height: 90vh;
 }
 
 .visit {
@@ -593,7 +603,6 @@ nav ul a:hover, nav ul a:focus {
 
 .blog-post {
   background-color: #FAFFFE;
-  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,10 +614,7 @@ nav ul a:hover, nav ul a:focus {
 .blog-post .blog-container {
   width: calc(70% - 40px);
   position: relative;
-}
-
-.blog-post aside {
-  width: calc(30% - 40px);
+  top: -250px;
 }
 
 .blog-post-container {
@@ -627,12 +633,10 @@ nav ul a:hover, nav ul a:focus {
 .blog-main-img {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
-  position: absolute;
-  top: -10%;
 }
 
 .blog-post-text {
-  padding-top: 400px;
+  padding: 80px 30px 40px;
   border-right: 5px solid #50E3C2;
   border-bottom: 5px solid #50E3C2;
 }
@@ -659,10 +663,6 @@ nav ul a:hover, nav ul a:focus {
 
 .blog-post-text p {
   padding: 15px 0;
-}
-
-.blog-post-text p:last-of-type {
-  padding-bottom: 60px;
 }
 
 .comments-container {
@@ -758,6 +758,11 @@ nav ul a:hover, nav ul a:focus {
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+aside {
+  width: calc(30% - 40px);
+  padding-top: 80px;
 }
 
 .mission,
