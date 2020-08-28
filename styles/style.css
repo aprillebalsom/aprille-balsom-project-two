@@ -526,7 +526,7 @@ fieldset {
 
 .blog {
   background-color: #50E3C250;
-  padding: 80px 0 60px;
+  padding-top: 80px;
 }
 
 .blog-container {
@@ -541,24 +541,24 @@ fieldset {
 }
 
 .blog-container .blog-img {
-  width: calc(60% - 100px);
+  width: calc(50% - 80px);
 }
 
 .blog-container .blog-img .blog-img-1,
 .blog-container .blog-img .blog-img-2 {
-  -webkit-box-shadow: 15px 15px #50E3C2;
-          box-shadow: 15px 15px #50E3C2;
   position: relative;
 }
 
 .blog-container .blog-img .blog-img-1 {
+  -webkit-box-shadow: 15px 15px #50E3C2;
+          box-shadow: 15px 15px #50E3C2;
   top: -100px;
-  left: -100px;
 }
 
 .blog-container .blog-img .blog-img-2 {
-  bottom: -100px;
-  right: -100px;
+  -webkit-box-shadow: -15px 15px #50E3C2;
+          box-shadow: -15px 15px #50E3C2;
+  bottom: -50px;
 }
 
 .blog-container .special-img {
@@ -568,7 +568,7 @@ fieldset {
 }
 
 .blog-container .blog-text {
-  width: calc(40% - 10px);
+  width: calc(50% - 80px);
 }
 
 .blog-container .blog-text h2 {
@@ -584,8 +584,13 @@ fieldset {
   padding: 10px 0 20px;
 }
 
+.blog-container .text-right {
+  padding: 0 15px 0 80px;
+}
+
 .blog-container .text-left {
   text-align: right;
+  padding: 0 80px 0 15px;
 }
 
 .contest-text {
