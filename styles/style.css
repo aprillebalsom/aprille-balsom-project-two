@@ -365,6 +365,13 @@ fieldset {
           align-items: center;
 }
 
+.home-header-main .home-header-img {
+  width: 45%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
 .home-header-main h1 {
   color: #0C5F4C;
   font-family: "Lato", sans-serif;
@@ -373,6 +380,9 @@ fieldset {
   line-height: 58px;
   letter-spacing: 6.7px;
   text-transform: lowercase;
+  width: 50%;
+  padding-left: 85px;
+  z-index: 10;
 }
 
 .home-header-main h1 .header-logo-special {
@@ -383,7 +393,6 @@ fieldset {
   font-weight: bold;
   text-tranform: uppercase;
   font-weight: bolder;
-  padding-top: 20px;
   display: inline-block;
 }
 
@@ -708,6 +717,10 @@ fieldset {
   padding-bottom: 10px;
 }
 
+.comments-form {
+  background-color: #FAFFFE;
+}
+
 .comments-form .form-flex input {
   width: calc(50% - 20px);
   padding: 0 0 30px 30px;
@@ -720,10 +733,6 @@ fieldset {
 
 .comments-form textarea {
   padding: 30px 0 0 30px;
-}
-
-.comments-form {
-  background-color: #FAFFFE;
 }
 
 aside {
@@ -762,6 +771,7 @@ aside {
 
 .contact-main {
   background-color: #FAFFFE;
+  margin-bottom: -50px;
 }
 
 .contact-main .contact-container {
@@ -775,12 +785,13 @@ aside {
 
 .contact-form {
   background-color: white;
-  width: calc(75% - 40px);
-  padding: 50px;
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
+  width: calc(75% - 30px);
+  padding: 50px;
   position: relative;
   top: -150px;
+  left: -50px;
 }
 
 .contact-form .form-flex input {
@@ -798,7 +809,7 @@ aside {
 }
 
 .contact-info {
-  width: calc(25% - 40px);
+  width: calc(25% - 30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
