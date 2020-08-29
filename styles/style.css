@@ -871,6 +871,23 @@ p {
   background-color: #0C5F4C;
 }
 
+.skip-link {
+  background-color: #063974;
+  color: #FAFFFE;
+  text-align: center;
+  border-radius: 4px;
+  width: 225px;
+  padding: 3px;
+  position: absolute;
+  left: -1000px;
+  top: 3px;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  left: 40%;
+}
+
 .form-flex {
   display: -webkit-box;
   display: -ms-flexbox;

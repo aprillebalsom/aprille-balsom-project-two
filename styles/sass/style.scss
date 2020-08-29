@@ -105,6 +105,23 @@ p {
     }
 }
 
+.skip-link {
+    background-color: $button-color;
+    color: $secondary-bg-color;
+    text-align: center;
+    border-radius: 4px;
+    width: 225px;
+    padding: 3px;
+    position: absolute;
+    left: -1000px;
+    top: 3px;
+    z-index: 20;
+    &:focus {
+        left: 40%;
+    }
+}
+
+
 // GENERAL FORM STYLES
 .form-flex {
     display: flex;
