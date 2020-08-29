@@ -337,7 +337,7 @@ fieldset {
 
 .mobile-nav .hamburger-icon {
   color: #FAFFFE;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .header-top a {
@@ -915,6 +915,44 @@ aside {
     padding: 40px;
     text-align: center;
   }
+  .blog-post {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog-post .blog-container,
+  .blog-post aside {
+    width: 90%;
+  }
+  .blog-post aside {
+    padding: 0 0 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blog-post aside img {
+    -webkit-box-shadow: 15px 15px #50E3C2;
+            box-shadow: 15px 15px #50E3C2;
+    width: 40%;
+  }
+  .blog-post aside .aside-text {
+    width: 60%;
+    padding: 10px 20px 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -1027,9 +1065,8 @@ aside {
             align-items: center;
     text-align: center;
   }
-  .info i {
-    margin-bottom: 20px;
-    margin-right: 0;
+  .info .info-icon i {
+    margin: 0 0 20px 0;
   }
   .contest-img img {
     height: 30vh;

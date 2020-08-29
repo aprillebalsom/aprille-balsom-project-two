@@ -7,8 +7,7 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
-    //HOMEPAGE STYLES
-
+    //HEADER STYLES
     .header-top {
         flex-direction: column;
         align-items: flex-start;
@@ -16,7 +15,6 @@
         ul a {
             padding: 20px;
         }
-
     }
 
     .home-header-main {
@@ -36,6 +34,7 @@
         }
     }
 
+    //HOMEPAGE STYLES
     .blog-container {
         flex-direction: column;
         justify-content: center;
@@ -67,7 +66,34 @@
 
     }
 
+    //BLOG PAGE STYLES
+    .blog-post {
+        flex-direction: column;
 
+        .blog-container,
+        aside {
+            width: 90%;
+        }
+
+        aside {
+            padding: 0 0 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                box-shadow: 15px 15px  $accent-color;
+                width: 40%;
+            }
+
+            .aside-text {
+                width: 60%;
+                padding: 10px 20px 0 60px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
 
 }
 
@@ -193,12 +219,9 @@
         align-items: center;
         text-align: center;
 
-        i {
-            // TODO make shorthand
-            margin-bottom: 20px;
-            margin-right: 0;
+        .info-icon i {
+            margin: 0 0 20px 0;
         }
-
     }
 
     .contest-img img {
