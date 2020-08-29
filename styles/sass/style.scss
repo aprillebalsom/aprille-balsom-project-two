@@ -22,15 +22,6 @@ $secondary-font:'Playfair Display SC', serif;
     letter-spacing: $spacing;
 }
 
-@mixin logo-variations($color, $size) {
-    color: $color;
-    font-family: $secondary-font;
-    font-size: $size;
-    font-style: italic;
-    font-weight: bold;
-    text-tranform: uppercase;
-}
-
 @mixin custom-h2 ($color){
     color: $color;
     font-family: $primary-font;
@@ -47,6 +38,15 @@ $secondary-font:'Playfair Display SC', serif;
     font-weight: $weight;
     letter-spacing: 3.2px;
     line-height: 58px;
+}
+
+@mixin logo-variations($color, $size) {
+    color: $color;
+    font-family: $secondary-font;
+    font-size: $size;
+    font-style: italic;
+    font-weight: bold;
+    text-tranform: uppercase;
 }
 
 // IMPORTING OF PARTIALS

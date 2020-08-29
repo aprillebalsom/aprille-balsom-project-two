@@ -1,11 +1,217 @@
+//MEDIA QUERIES
+
+@media (max-width: 1015px) {
+
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+
+    //HOMEPAGE STYLES
+
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+
+        ul a {
+            padding: 20px;
+        }
+
+    }
+
+    .home-header-main {
+
+        h1 {
+            font-size: 6rem;
+            text-align: center;
+            line-height: 80px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            .header-logo-special {
+                font-size: 9rem;
+            }
+        }
+    }
+
+    .blog-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .blog-img {
+            width: 80%;
+
+            .blog-img-1,
+            .blog-img-2 {
+                position: static;
+                margin: 0;
+            }
+        }
+
+        .special-img {
+            order: 0;
+        }
+
+        .blog-text {
+            width: 100%;
+        }
+
+        .text-right,
+        .text-left {
+            padding: 40px;
+            text-align: center;
+        }
+
+    }
+
+
+
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+    //HOMEPAGE STYLES
+    .home-header-main {
+
+        h1 {
+        font-size: 5rem;
+
+            .header-logo-special {
+                font-size: 7rem;
+            }
+        }
+
+        .home-header-img {
+            width: 50%;
+           bottom: 40px;
+
+        }
+    }
+
+
+    //TODO fix how it is oragnized
+    .visit-container,
+    .info-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .visit-img {
+            width: 80%;
+        }
+
+        .visit-text,
+        .info {
+            width: 100%;
+        }
+        
+        .visit-text{
+            order: 1;
+            text-align: center;
+        }
+    }
+
+    .contest-text p {
+        width: 100%;
+    }
+
 }
 
 /* Landscape phones and down */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
+
+    //GENERAL STYLES
+    p,
+    .button {
+        font-size: 1.6rem;
+    }
+
+    //HEADER STYLES
+    .home-header {
+        height: 50vh;
+    }
+
+    .header-top {
+        .logo {
+            display: none;
+        }
+
+        .mobile-nav {
+            display: block;
+        }
+
+        ul a {
+            display: none;
+        }
+
+    }
+
+    .home-header-main {
+    
+        .home-header-img {
+            display: none;
+        }
+
+        h1 {
+            font-size: 3rem;
+            line-height: 40px;
+          
+            .header-logo-special {
+                font-size: 4.6rem;
+            }
+
+        }
+    }
+
+    //HOMEPAGE STYLES
+    .visit {
+        padding: 50px 0;
+    
+        .visit-img {
+            width: 100%;
+        }
+    }
+
+    .gallery-container ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+    }
+
+    .info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        i {
+            // TODO make shorthand
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+
+    }
+
+    .contest-img img {
+        height: 30vh;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .contest-text {
+        padding: 50px 0;
+    }
 }
+
+
+//NOTES
+// TODO - add padding-bottom to blog grid section
