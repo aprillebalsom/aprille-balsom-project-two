@@ -70,8 +70,6 @@ transition: all .5s;
         @include custom-h1($secondary-text-color, 6.2rem, 6.7px);
         text-transform: lowercase;
         width: 50%;
-        // TODO leave in or out?
-        // padding-left: 85px;
         z-index: 10;
 
         .header-logo-special {
@@ -106,5 +104,13 @@ transition: all .5s;
 .contact-header {
     background-image: url("../styles/assets/contact-image-1.jpg");
     background-position: center;
+}
+
+//FOOTER STYLES
+footer {
+    background-color: $primary-text-color;
+    color: $secondary-bg-color;
+    text-align: center;
+    padding: 10px 0;
 }
 

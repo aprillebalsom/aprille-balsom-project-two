@@ -51,19 +51,18 @@ $secondary-font:'Playfair Display SC', serif;
 
 // IMPORTING OF PARTIALS
 @import "setup";
-@import "header";
+@import "header-footer";
 
 //HOME PAGE PARTIALS
-@import "home-visit";
-@import "home-gallery";
-@import "home-about";
-@import "home-blog";
-@import "home-contest";
+@import "home-visit-gallery-about";
+@import "home-blog-giveaway";
 
 //ADDITIONAL PAGE PARTIALS
 @import "blog-post";
 @import "contact";
 
+//MEDIA QUERIES PARTIAL
+@import "mediaqueries";
 
 //GENERAL STYLES
 html {
@@ -121,7 +120,6 @@ p {
     }
 }
 
-
 // GENERAL FORM STYLES
 .form-flex {
     display: flex;
@@ -152,13 +150,7 @@ textarea {
     padding: 25px 0 0 25px;
     resize: none;
 }
-
-footer {
-    background-color: $primary-text-color;
-    color: $secondary-bg-color;
-    text-align: center;
-    padding: 10px 0;
-}
-
+//GENERAL FORM STYLES END
+// GENERAL STYLES END
 
 
