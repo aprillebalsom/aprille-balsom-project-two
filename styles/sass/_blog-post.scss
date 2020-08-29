@@ -5,25 +5,25 @@
     justify-content: space-between;
 
     .blog-container {
-        width: calc(70% - 40px);
+        width: calc(70% - 80px);
         margin-bottom: -120px;
         position: relative;
         top: -200px;
-        
+
     }
 }
 
-.blog-post-container {
+.blog-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-// TODO try to fix gap between columns
-.blog-main-img {
-    box-shadow: 15px 15px $accent-color;  
-    position: relative;
-    right: 15px;
+    .blog-main-img {
+        box-shadow: 15px 15px $accent-color;  
+        position: relative;
+        right: 15px;
+    }
+
 }
 
 .blog-post-text {
@@ -52,7 +52,7 @@
 }
 
 // COMMENTS SECTION STYLES
-.comments-container {
+.comments-content {
     padding: 60px 0 30px 40px;
 
     h3 {
@@ -61,8 +61,7 @@
     }
 }
 
-.comment-1, 
-.comment-2 {
+.comment {
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
@@ -83,7 +82,6 @@
 
 // COMMENTS FORM STYLES
 .comments-form {
-    background-color: $secondary-bg-color;
 
     .form-flex input {    
         width: calc(50% - 20px);
@@ -92,7 +90,8 @@
     
     input,
     textarea {
-        margin-bottom: 30px;
+        background-color: $secondary-bg-color;
+        margin-bottom: 30px; 
     }
     
     textarea {
@@ -102,7 +101,7 @@
 
 // ASIDE STYLES
 aside {
-    width: calc(30% - 40px);
+    width: calc(30% - 60px);
     padding-top: 80px;
 }
 

@@ -70,14 +70,16 @@ transition: all .5s;
         @include custom-h1($secondary-text-color, 6.2rem, 6.7px);
         text-transform: lowercase;
         width: 50%;
-        padding-left: 85px;
+        // TODO leave in or out?
+        // padding-left: 85px;
         z-index: 10;
 
         .header-logo-special {
             @include logo-variations($button-color, 11.12rem);
-            font-weight: bolder;
-            // padding-top: 20px;
+            font-weight: bold;
+            letter-spacing: 0;
             display: inline-block;
+            
         }
     }
 }

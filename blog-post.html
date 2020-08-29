@@ -48,7 +48,7 @@
         <div class="blog-container">
 
             <!-- START OF BLOG POST SECTION -->
-            <section class="blog-post-container">
+            <section class="blog-content">
 
                 <img class="blog-main-img" src="./styles/assets/post-image.jpg" alt="A pathway leading up to a blue wooden beach house">
 
@@ -71,77 +71,73 @@
             <!-- END OF BLOG POST SECTION -->
 
             <!-- START OF COMMENTS SECTION -->
-            <section class="comments-container">
+            <section class="comments-content wrapper">
+                <!-- <div class="wrapper"> -->
+            
+                <h3>Comments:</h3>
+                
+                <div class="comment">
 
-                <div class="wrapper">
-                    <!-- TODO confirm the headings make sense -->
-                    <h3>Comments:</h3>
-                    
-                    <div class="comment-1">
-
-                        <div class="comment-img">
-                            <img src="./styles/assets/comment-image.jpg" alt="Profile picture of commenter, Reyansh">
-                        </div>
-
-                        <div class="comment-text">
-                            <h4>Tuesday October 9th, 2019 by Reyansh</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
-                        </div>
+                    <div class="comment-img">
+                        <img src="./styles/assets/comment-image.jpg" alt="Profile picture of commenter, Reyansh">
                     </div>
 
-                    <div class="comment-2">
-
-                        <div class="comment-img">
-                            <img src="./styles/assets/comment-image2.jpg" alt="Profile picture of commenter, Olivia">
-                        </div>
-
-                        <div class="comment-text">
-                            <h4>Wednesday October 10th, 2019 by Olivia</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam remeos consequatur reprehenderit.</p>
-                        </div>
-
+                    <div class="comment-text">
+                        <h4>Tuesday October 9th, 2019 by Reyansh</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam rem eos consequatur reprehenderit velit voluptatibus ut consequuntur perferendis eligendi.</p>
                     </div>
-
-                    <form class="comments-form" action="">
-                      
-                        <div class="form-flex">
-                            <label class="sr-only" for="commenters-name">Enter your name</label>
-                            <!-- class="comments-form" -->
-                            <input type="text" id="commenters-name" placeholder="Name">
-                        
-                            <label class="sr-only" for="commenters-email">Enter your email address</label>
-
-                            <input type="email" id="commenters-email" placeholder="Email Address">
-                        </div>
-
-                        <label class="sr-only" for="comment-textbox"> Write your message in here</label>
-                        <textarea id="comments-textbox" class="comments-form" name="comment" cols="30" rows="7" placeholder="Comment"></textarea>
-
-                        <button class="button" type="submit">Post comment</button>
-
-                    </form>
                 </div>
 
+                <div class="comment">
+
+                    <div class="comment-img">
+                        <img src="./styles/assets/comment-image2.jpg" alt="Profile picture of commenter, Olivia">
+                    </div>
+
+                    <div class="comment-text">
+                        <h4>Wednesday October 10th, 2019 by Olivia</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, quaerat recusandae amet cumque natus, ullam remeos consequatur reprehenderit.</p>
+                    </div>
+
+                </div>
+
+                <form class="comments-form" action="">
+                    
+                    <div class="form-flex">
+                        <label class="sr-only" for="commenters-name">Enter your name</label>
+                        <input type="text" id="commenters-name" placeholder="Name">
+                    
+                        <label class="sr-only" for="commenters-email">Enter your email address</label>
+                        <input type="email" id="commenters-email" placeholder="Email Address">
+                    </div>
+
+                    <label class="sr-only" for="comment-textbox">Write your comment in here</label>
+                    <textarea id="comments-textbox" name="comment" cols="30" rows="7" placeholder="Comment"></textarea>
+
+                    <button class="button" type="submit">Post comment</button>
+
+                </form>
+        
             </section>
             <!-- END OF COMMENTS SECTION -->
-    
         </div>
         <!-- END OF BLOG SECTION -->
 
+
         <!-- START OF ASIDE SECTION -->
         <aside>
-            <!-- TODO does this need a wrapper? -->
+            
             <img src="./styles/assets/sidebar-image.jpg" alt="Two beach houses along the coastline">
 
         
-            <div class="mission">
+            <section class="mission">
                 <h4>Our mission</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeanment dolorem fugiat corporis!</p>
                 <a href="#">Find out more.</a>
-            </div>
+            </section>
             
         
-            <div class="recent-posts">
+            <section class="recent-posts">
                 <h4>Recent Posts</h4>
                 <ul>
                     <li>Lorem ipsum dolor sit.</li>
@@ -149,23 +145,22 @@
                     <li>Lorem ipsum dolor sit.</li>
                     <li>Lorem ipsum dolor sit.</li>
                 </ul>
-            </div>
+            </section>
             
         </aside> 
         <!-- END OF ASIDE SECTION -->
     </main>
     <!-- END OF MAIN -->
 
+
     <!-- START OF FOOTER CONTENT -->
     <footer>
-    
-        <section>
-            <div class="wrapper">
-                <h4>Copyright &copy; 2019 HackerYou</h4>
-                <p>Created at <a href="https://www.junocollege.com">Juno College</a></p>
-            </div>
-        </section>
-    
+
+        <div class="wrapper">
+            <h4>Copyright &copy; 2019 HackerYou</h4>
+            <p>Created at <a href="https://www.junocollege.com">Juno College</a></p>
+        </div>
+     
     </footer>
     <!-- END OF FOOTER -->
 

@@ -381,7 +381,6 @@ fieldset {
   letter-spacing: 6.7px;
   text-transform: lowercase;
   width: 50%;
-  padding-left: 85px;
   z-index: 10;
 }
 
@@ -392,7 +391,8 @@ fieldset {
   font-style: italic;
   font-weight: bold;
   text-tranform: uppercase;
-  font-weight: bolder;
+  font-weight: bold;
+  letter-spacing: 0;
   display: inline-block;
 }
 
@@ -552,6 +552,7 @@ fieldset {
 .blog-container .blog-img .blog-img-1 {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
+  margin-bottom: -40px;
   top: -100px;
 }
 
@@ -625,13 +626,13 @@ fieldset {
 }
 
 .blog-post .blog-container {
-  width: calc(70% - 40px);
+  width: calc(70% - 80px);
   margin-bottom: -120px;
   position: relative;
   top: -200px;
 }
 
-.blog-post-container {
+.blog-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -644,7 +645,7 @@ fieldset {
           justify-content: space-between;
 }
 
-.blog-main-img {
+.blog-content .blog-main-img {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
   position: relative;
@@ -681,11 +682,11 @@ fieldset {
   padding: 15px 0;
 }
 
-.comments-container {
+.comments-content {
   padding: 60px 0 30px 40px;
 }
 
-.comments-container h3 {
+.comments-content h3 {
   color: #2C2C2C;
   font-family: "Lato", sans-serif;
   font-size: 2.8rem;
@@ -695,8 +696,7 @@ fieldset {
   padding-bottom: 40px;
 }
 
-.comment-1,
-.comment-2 {
+.comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -706,24 +706,17 @@ fieldset {
   padding-bottom: 80px;
 }
 
-.comment-1 .comment-img,
-.comment-2 .comment-img {
+.comment .comment-img {
   width: calc(20% - 20px);
 }
 
-.comment-1 .comment-text,
-.comment-2 .comment-text {
+.comment .comment-text {
   width: calc(80% - 20px);
 }
 
-.comment-1 .comment-text h4,
-.comment-2 .comment-text h4 {
+.comment .comment-text h4 {
   color: #063974;
   padding-bottom: 10px;
-}
-
-.comments-form {
-  background-color: #FAFFFE;
 }
 
 .comments-form .form-flex input {
@@ -733,6 +726,7 @@ fieldset {
 
 .comments-form input,
 .comments-form textarea {
+  background-color: #FAFFFE;
   margin-bottom: 30px;
 }
 
@@ -741,7 +735,7 @@ fieldset {
 }
 
 aside {
-  width: calc(30% - 40px);
+  width: calc(30% - 60px);
   padding-top: 80px;
 }
 
