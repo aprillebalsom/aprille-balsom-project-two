@@ -1,21 +1,6 @@
 //MEDIA QUERIES
 
-@media (max-width: 1015px) {
-
-}
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-
-    //HEADER STYLES
-    .header-top {
-        flex-direction: column;
-        align-items: flex-start;
-
-        ul a {
-            padding: 20px;
-        }
-    }
+@media (max-width: 1050px) {
 
     .home-header-main {
 
@@ -34,26 +19,46 @@
         }
     }
 
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+
+    //HEADER STYLES
+    .header-top {
+        flex-direction: column;
+        align-items: flex-start;
+
+        ul a {
+            padding: 20px;
+        }
+    }
+
     .blog-header-main,
     .contact-header-main {
         justify-content: center;
         
         h1 {
             font-size: 7rem;
+            text-align: center;
         }
     }
 
+    .home-header-img {
+        display: none;
+    }
+
     //HOMEPAGE STYLES
-    .blog-container {
+    .news-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .blog-img {
+        .news-img {
             width: 80%;
 
-            .blog-img-1,
-            .blog-img-2 {
+            .news-img-1,
+            .news-img-2 {
                 position: static;
                 margin: 0;
             }
@@ -63,7 +68,7 @@
             order: 0;
         }
 
-        .blog-text {
+        .news-text {
             width: 100%;
         }
 
@@ -105,7 +110,6 @@
     }
 
     // CONTACT PAGE STYLES
-
     .contact-main {
         margin: 0;
         padding: 40px 0;
@@ -163,11 +167,11 @@
             }
         }
 
-        .home-header-img {
-            width: 50%;
-           bottom: 40px;
+        // .home-header-img {
+        //     width: 50%;
+        //    bottom: 40px;
 
-        }
+        // }
     }
 
     //HOMEPAGE STYLES
@@ -214,8 +218,6 @@
         }
     }
 
-  
-
     .blog-post-text{
         border-right: none;
     }
@@ -248,13 +250,14 @@
         }
     }
     
-
 }
+
 
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
     //GENERAL STYLES
+    // TODO check if this is working
     h2 {
         font-size: 3rem;
         line-height: 40px;
@@ -284,14 +287,13 @@
         ul a {
             display: none;
         }
-
     }
 
     .home-header-main {
     
-        .home-header-img {
-            display: none;
-        }
+        // .home-header-img {
+        //     display: none;
+        // }
 
         h1 {
             font-size: 3rem;
@@ -359,7 +361,6 @@
         align-items: center;
     }
 
-
     .blog-content {
         justify-content: center;
         align-items: center;
@@ -405,11 +406,7 @@
         }
     }
 
-
-
 }
-
-
 
 //END OF MEDIA QUERIES
 

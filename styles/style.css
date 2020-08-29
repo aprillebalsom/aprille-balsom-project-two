@@ -540,12 +540,12 @@ footer {
   margin-right: 20px;
 }
 
-.blog {
+.news {
   background-color: #50E3C250;
   padding-top: 80px;
 }
 
-.blog-container {
+.news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,39 +556,39 @@ footer {
       flex-wrap: wrap;
 }
 
-.blog-container .blog-img {
+.news-container .news-img {
   width: calc(50% - 80px);
 }
 
-.blog-container .blog-img .blog-img-1,
-.blog-container .blog-img .blog-img-2 {
+.news-container .news-img .news-img-1,
+.news-container .news-img .news-img-2 {
   position: relative;
 }
 
-.blog-container .blog-img .blog-img-1 {
+.news-container .news-img .news-img-1 {
   -webkit-box-shadow: 15px 15px #50E3C2;
           box-shadow: 15px 15px #50E3C2;
   margin-bottom: -40px;
   top: -100px;
 }
 
-.blog-container .blog-img .blog-img-2 {
+.news-container .news-img .news-img-2 {
   -webkit-box-shadow: -15px 15px #50E3C2;
           box-shadow: -15px 15px #50E3C2;
   bottom: -50px;
 }
 
-.blog-container .special-img {
+.news-container .special-img {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-.blog-container .blog-text {
+.news-container .news-text {
   width: calc(50% - 80px);
 }
 
-.blog-container .blog-text h2 {
+.news-container .news-text h2 {
   color: #063974;
   font-family: "Lato", sans-serif;
   font-size: 3.5rem;
@@ -597,15 +597,15 @@ footer {
   line-height: 58px;
 }
 
-.blog-container .blog-text p {
+.news-container .news-text p {
   padding: 10px 0 20px;
 }
 
-.blog-container .text-right {
+.news-container .text-right {
   padding: 0 15px 0 80px;
 }
 
-.blog-container .text-left {
+.news-container .text-left {
   text-align: right;
   padding: 0 80px 0 15px;
 }
@@ -855,20 +855,7 @@ aside {
   padding: 10px 0 15px;
 }
 
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  .header-top {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .header-top ul a {
-    padding: 20px;
-  }
+@media (max-width: 1050px) {
   .home-header-main h1 {
     font-size: 6rem;
     text-align: center;
@@ -888,6 +875,22 @@ aside {
   .home-header-main h1 .header-logo-special {
     font-size: 9rem;
   }
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .header-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header-top ul a {
+    padding: 20px;
+  }
   .blog-header-main,
   .contact-header-main {
     -webkit-box-pack: center;
@@ -897,8 +900,12 @@ aside {
   .blog-header-main h1,
   .contact-header-main h1 {
     font-size: 7rem;
+    text-align: center;
   }
-  .blog-container {
+  .home-header-img {
+    display: none;
+  }
+  .news-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -910,24 +917,24 @@ aside {
         -ms-flex-align: center;
             align-items: center;
   }
-  .blog-container .blog-img {
+  .news-container .news-img {
     width: 80%;
   }
-  .blog-container .blog-img .blog-img-1,
-  .blog-container .blog-img .blog-img-2 {
+  .news-container .news-img .news-img-1,
+  .news-container .news-img .news-img-2 {
     position: static;
     margin: 0;
   }
-  .blog-container .special-img {
+  .news-container .special-img {
     -webkit-box-ordinal-group: 1;
         -ms-flex-order: 0;
             order: 0;
   }
-  .blog-container .blog-text {
+  .news-container .news-text {
     width: 100%;
   }
-  .blog-container .text-right,
-  .blog-container .text-left {
+  .news-container .text-right,
+  .news-container .text-left {
     padding: 40px;
     text-align: center;
   }
@@ -1022,10 +1029,6 @@ aside {
   }
   .home-header-main h1 .header-logo-special {
     font-size: 7rem;
-  }
-  .home-header-main .home-header-img {
-    width: 50%;
-    bottom: 40px;
   }
   .visit-container,
   .info-container {
@@ -1132,9 +1135,6 @@ aside {
     display: block;
   }
   .header-top ul a {
-    display: none;
-  }
-  .home-header-main .home-header-img {
     display: none;
   }
   .home-header-main h1 {

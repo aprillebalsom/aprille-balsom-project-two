@@ -1,29 +1,29 @@
-// BLOG CONTAINER SECTION
-.blog {
+// NEWS CONTAINER SECTION
+.news {
     background-color: $primary-bg-color;
     padding-top: 80px;
 }
 
-.blog-container {
+.news-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
-    .blog-img {
+    .news-img {
         width: calc(50% - 80px);
         
-        .blog-img-1,
-        .blog-img-2 {
+        .news-img-1,
+        .news-img-2 {
             position: relative;
         }
 
-        .blog-img-1 {
+        .news-img-1 {
             box-shadow: 15px 15px $accent-color;
             margin-bottom: -40px;
             top: -100px;
         }
         
-        .blog-img-2 {
+        .news-img-2 {
             box-shadow: -15px 15px $accent-color;
             bottom: -50px;  
         }
@@ -33,7 +33,7 @@
         order: 1;
     }
 
-    .blog-text {
+    .news-text {
         width: calc(50% - 80px);
     
         h2 {
