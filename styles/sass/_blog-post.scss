@@ -82,9 +82,13 @@
 // COMMENTS FORM STYLES
 .comments-form {
 
-    .form-flex input {    
-        width: calc(50% - 20px);
-        padding: 0 0 30px 30px;
+    .form-flex {
+        display: flex;
+        
+        input {    
+            width: calc(50% - 20px);
+            padding: 0 0 30px 30px;
+        }
     }
     
     input,

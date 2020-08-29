@@ -100,7 +100,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-    //HOMEPAGE STYLES
+    //HEADER STYLES
     .home-header-main {
 
         h1 {
@@ -118,7 +118,7 @@
         }
     }
 
-
+    //HOMEPAGE STYLES
     //TODO fix how it is oragnized
     .visit-container,
     .info-container {
@@ -145,19 +145,60 @@
         width: 100%;
     }
 
+    //BLOG PAGE STYLES
+    .blog-container {
+        position: static;
+        width: 100%;
+    }
+
+
+    .comment {
+        flex-direction: column;
+
+        .comment-img {
+            width: 25%;
+        }
+
+        .comment-text {
+            width: 100%;
+        }
+    }
+    
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
     //GENERAL STYLES
+
+    h2 {
+        font-size: 3rem;
+        line-height: 40px;
+    }
+
     p,
     .button {
         font-size: 1.6rem;
     }
 
+    .comments-form,
+    .contact-form {
+
+        .form-flex {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+
+        }
+    }
+
     //HEADER STYLES
-    .home-header {
+    .home-header,
+    .blog-header,
+    .contact-header {
         height: 50vh;
     }
 
@@ -233,7 +274,57 @@
     .contest-text {
         padding: 50px 0;
     }
+
+
+    //BLOG PAGE STYLES
+    .blog-post {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-content {
+        justify-content: center;
+        align-items: center;
+
+        .blog-main-img {
+            width: 90%;  
+            position: static;
+            align-self: center;
+        }
+
+        .blog-post-text {
+            border: 0;
+            text-align: center;
+            padding: 40px 0 0 0;
+
+            h2 {
+                font-size: 3rem;
+                line-height: 35px;
+            }
+        }
+    }
+
+
+    .comments-content {
+        border: 2px solid $accent-color;
+        text-align: center;
+        width: 100%;
+        padding: 20px 10px;
+
+        .comment {
+            align-items: center;
+
+            .comment-img {
+                width: 45%;
+                padding-bottom: 20px;
+            }
+        }
+    }
 }
+
+
+
+//END OF MEDIA QUERIES
 
 
 //NOTES
