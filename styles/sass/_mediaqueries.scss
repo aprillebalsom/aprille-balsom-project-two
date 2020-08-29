@@ -69,36 +69,51 @@
     //BLOG PAGE STYLES
     .blog-post {
         flex-direction: column;
+    }
+    
+    .blog-container {
+        width: 90%;
+    }
+    
+    aside {
+        width: 100%;
+        padding: 80px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        .blog-container,
-        aside {
-            width: 90%;
+        img {
+            box-shadow: 15px 15px  $accent-color;
+            width: 40%;
         }
 
-        aside {
-            padding: 0 0 80px;
+        .aside-text {
+            width: 60%;
+            padding: 10px 20px 0 60px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                box-shadow: 15px 15px  $accent-color;
-                width: 40%;
-            }
-
-            .aside-text {
-                width: 60%;
-                padding: 10px 20px 0 60px;
-                display: flex;
-                flex-direction: column;
-            }
+            flex-direction: column;
         }
     }
+    
 
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+
+    //GENERAL FORM STYLES
+    .comments-form,
+    .contact-form {
+
+        .form-flex {
+            flex-direction: column;
+
+            input {
+                width: 100%;
+            }
+
+        }
+    }
 
     //HEADER STYLES
     .home-header-main {
@@ -117,6 +132,17 @@
 
         }
     }
+
+    .blog-header-main,
+    .contact-header-main {
+        justify-content: center;
+        
+        h1 {
+            font-size: 7rem;
+        }
+    }
+
+
 
     //HOMEPAGE STYLES
     //TODO fix how it is oragnized
@@ -149,8 +175,24 @@
     .blog-container {
         position: static;
         width: 100%;
+        margin-bottom: 0;
     }
 
+    .blog-content {
+        padding-top: 60px;
+
+        .blog-main-img {
+            position: static;
+            margin: 0 auto;
+            width: 80%;
+        }
+    }
+
+  
+
+    .blog-post-text{
+        border-right: none;
+    }
 
     .comment {
         flex-direction: column;
@@ -163,6 +205,22 @@
             width: 100%;
         }
     }
+
+    aside {
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+
+        img {
+            width: 60%;  
+        }
+
+        .aside-text {
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+    }
     
 
 }
@@ -171,7 +229,6 @@
 @media (max-width: 500px) {
 
     //GENERAL STYLES
-
     h2 {
         font-size: 3rem;
         line-height: 40px;
@@ -180,19 +237,6 @@
     p,
     .button {
         font-size: 1.6rem;
-    }
-
-    .comments-form,
-    .contact-form {
-
-        .form-flex {
-            flex-direction: column;
-
-            input {
-                width: 100%;
-            }
-
-        }
     }
 
     //HEADER STYLES
@@ -231,6 +275,14 @@
                 font-size: 4.6rem;
             }
 
+        }
+    }
+
+    .blog-header-main,
+    .contact-header-main {
+        
+        h1 {
+            font-size: 4.6rem;
         }
     }
 
@@ -275,25 +327,24 @@
         padding: 50px 0;
     }
 
-
     //BLOG PAGE STYLES
     .blog-post {
         justify-content: center;
         align-items: center;
     }
 
+
     .blog-content {
         justify-content: center;
         align-items: center;
 
         .blog-main-img {
-            width: 90%;  
-            position: static;
-            align-self: center;
+            width: 100%;
+            box-shadow: none;
         }
 
         .blog-post-text {
-            border: 0;
+            border: none;
             text-align: center;
             padding: 40px 0 0 0;
 
@@ -306,10 +357,10 @@
 
 
     .comments-content {
-        border: 2px solid $accent-color;
+        border: 3px solid $accent-color;
         text-align: center;
         width: 100%;
-        padding: 20px 10px;
+        padding: 20px;
 
         .comment {
             align-items: center;
@@ -320,6 +371,16 @@
             }
         }
     }
+
+    .aside-text {
+
+        li {
+            font-size: 1.6rem;
+        }
+    }
+
+
+
 }
 
 

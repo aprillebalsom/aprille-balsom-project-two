@@ -3,13 +3,13 @@
     background-color: $secondary-bg-color;
     display: flex;
     justify-content: space-between;
+}
 
-    .blog-container {
-        width: calc(70% - 80px);
-        margin-bottom: -120px;
-        position: relative;
-        top: -200px;
-    }
+.blog-container {
+    width: calc(70% - 80px);
+    margin-bottom: -120px;
+    position: relative;
+    top: -200px;
 }
 
 .blog-content {
@@ -84,7 +84,7 @@
 
     .form-flex {
         display: flex;
-        
+
         input {    
             width: calc(50% - 20px);
             padding: 0 0 30px 30px;

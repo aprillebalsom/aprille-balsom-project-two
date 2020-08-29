@@ -641,7 +641,7 @@ footer {
           justify-content: space-between;
 }
 
-.blog-post .blog-container {
+.blog-container {
   width: calc(70% - 80px);
   margin-bottom: -120px;
   position: relative;
@@ -927,12 +927,12 @@ aside {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .blog-post .blog-container,
-  .blog-post aside {
+  .blog-container {
     width: 90%;
   }
-  .blog-post aside {
-    padding: 0 0 80px;
+  aside {
+    width: 100%;
+    padding: 80px 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,12 +943,12 @@ aside {
         -ms-flex-align: center;
             align-items: center;
   }
-  .blog-post aside img {
+  aside img {
     -webkit-box-shadow: 15px 15px #50E3C2;
             box-shadow: 15px 15px #50E3C2;
     width: 40%;
   }
-  .blog-post aside .aside-text {
+  aside .aside-text {
     width: 60%;
     padding: 10px 20px 0 60px;
     display: -webkit-box;
@@ -963,6 +963,17 @@ aside {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .comments-form .form-flex,
+  .contact-form .form-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comments-form .form-flex input,
+  .contact-form .form-flex input {
+    width: 100%;
+  }
   .home-header-main h1 {
     font-size: 5rem;
   }
@@ -972,6 +983,16 @@ aside {
   .home-header-main .home-header-img {
     width: 50%;
     bottom: 40px;
+  }
+  .blog-header-main,
+  .contact-header-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-header-main h1,
+  .contact-header-main h1 {
+    font-size: 7rem;
   }
   .visit-container,
   .info-container {
@@ -1009,6 +1030,18 @@ aside {
   .blog-container {
     position: static;
     width: 100%;
+    margin-bottom: 0;
+  }
+  .blog-content {
+    padding-top: 60px;
+  }
+  .blog-content .blog-main-img {
+    position: static;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .blog-post-text {
+    border-right: none;
   }
   .comment {
     -webkit-box-orient: vertical;
@@ -1022,6 +1055,26 @@ aside {
   .comment .comment-text {
     width: 100%;
   }
+  aside {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside img {
+    width: 60%;
+  }
+  aside .aside-text {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+  }
 }
 
 /* Landscape phones and down */
@@ -1033,17 +1086,6 @@ aside {
   p,
   .button {
     font-size: 1.6rem;
-  }
-  .comments-form .form-flex,
-  .contact-form .form-flex {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .comments-form .form-flex input,
-  .contact-form .form-flex input {
-    width: 100%;
   }
   .home-header,
   .blog-header,
@@ -1067,6 +1109,10 @@ aside {
     line-height: 40px;
   }
   .home-header-main h1 .header-logo-special {
+    font-size: 4.6rem;
+  }
+  .blog-header-main h1,
+  .contact-header-main h1 {
     font-size: 4.6rem;
   }
   .visit {
@@ -1134,14 +1180,12 @@ aside {
             align-items: center;
   }
   .blog-content .blog-main-img {
-    width: 90%;
-    position: static;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .blog-content .blog-post-text {
-    border: 0;
+    border: none;
     text-align: center;
     padding: 40px 0 0 0;
   }
@@ -1150,10 +1194,10 @@ aside {
     line-height: 35px;
   }
   .comments-content {
-    border: 2px solid #50E3C2;
+    border: 3px solid #50E3C2;
     text-align: center;
     width: 100%;
-    padding: 20px 10px;
+    padding: 20px;
   }
   .comments-content .comment {
     -webkit-box-align: center;
@@ -1163,6 +1207,9 @@ aside {
   .comments-content .comment .comment-img {
     width: 45%;
     padding-bottom: 20px;
+  }
+  .aside-text li {
+    font-size: 1.6rem;
   }
 }
 
