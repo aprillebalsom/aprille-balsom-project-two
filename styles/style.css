@@ -795,7 +795,7 @@ aside {
   margin-bottom: -50px;
 }
 
-.contact-main .contact-container {
+.contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,6 +888,16 @@ aside {
   .home-header-main h1 .header-logo-special {
     font-size: 9rem;
   }
+  .blog-header-main,
+  .contact-header-main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog-header-main h1,
+  .contact-header-main h1 {
+    font-size: 7rem;
+  }
   .blog-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -959,6 +969,39 @@ aside {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .contact-main {
+    margin: 0;
+    padding: 40px 0;
+  }
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-form {
+    position: static;
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-info .contact-icons i {
+    padding: 10px 20px;
+  }
 }
 
 /* Landscape phone to portrait tablet */
@@ -983,16 +1026,6 @@ aside {
   .home-header-main .home-header-img {
     width: 50%;
     bottom: 40px;
-  }
-  .blog-header-main,
-  .contact-header-main {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .blog-header-main h1,
-  .contact-header-main h1 {
-    font-size: 7rem;
   }
   .visit-container,
   .info-container {

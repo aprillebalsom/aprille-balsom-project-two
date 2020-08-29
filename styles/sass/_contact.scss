@@ -2,12 +2,12 @@
 .contact-main {
     background-color: $secondary-bg-color;
     margin-bottom: -50px;
-
-    .contact-container {
-        display: flex;
-        justify-content: space-between;
-    }   
 }
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+}   
 
 .contact-form {
     background-color: white;

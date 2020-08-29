@@ -34,6 +34,15 @@
         }
     }
 
+    .blog-header-main,
+    .contact-header-main {
+        justify-content: center;
+        
+        h1 {
+            font-size: 7rem;
+        }
+    }
+
     //HOMEPAGE STYLES
     .blog-container {
         flex-direction: column;
@@ -94,7 +103,35 @@
             flex-direction: column;
         }
     }
-    
+
+    // CONTACT PAGE STYLES
+
+    .contact-main {
+        margin: 0;
+        padding: 40px 0;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form {
+        position: static;
+        width: 100%;
+    }
+
+    .contact-info {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+        .contact-icons i {
+            padding: 10px 20px;
+        }
+    }
 
 }
 
@@ -132,17 +169,6 @@
 
         }
     }
-
-    .blog-header-main,
-    .contact-header-main {
-        justify-content: center;
-        
-        h1 {
-            font-size: 7rem;
-        }
-    }
-
-
 
     //HOMEPAGE STYLES
     //TODO fix how it is oragnized
