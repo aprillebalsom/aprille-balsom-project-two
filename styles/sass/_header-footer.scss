@@ -111,7 +111,7 @@ nav input[type="checkbox"] {
     align-items: center;
 
     h1 {
-    @include custom-h1($secondary-bg-color, 8.7rem, 9px);
+        @include custom-h1($secondary-bg-color, 8.7rem, 9px);
     }
 }
 
