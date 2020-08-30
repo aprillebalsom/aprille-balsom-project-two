@@ -509,7 +509,7 @@ footer {
   padding: 40px 0 60px;
 }
 
-.info-container {
+.about ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,7 +520,7 @@ footer {
       flex-wrap: wrap;
 }
 
-.info {
+.about ul li {
   width: calc(50% - 5px);
   padding: 30px 0;
   display: -webkit-box;
@@ -531,17 +531,17 @@ footer {
           justify-content: flex-start;
 }
 
-.info i {
+.about-icon i {
   color: #FAFFFE;
   background-color: #50E3C2;
-  border-radius: 50%;
   font-size: 3rem;
   text-align: center;
+  border-radius: 50%;
   padding: 12px;
   margin-right: 20px;
 }
 
-.info .info-text h3 {
+.about-text h3 {
   color: #0C5F4C;
   font-family: "Lato", sans-serif;
   font-size: 2.8rem;
@@ -1046,7 +1046,7 @@ aside {
     font-size: 7rem;
   }
   .visit-container,
-  .info-container {
+  .about ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1068,7 +1068,7 @@ aside {
         -ms-flex-order: 1;
             order: 1;
   }
-  .info-container .info {
+  .about ul li {
     width: 100%;
   }
   .contest-container img {
@@ -1188,7 +1188,7 @@ aside {
     width: 100%;
     padding-bottom: 20px;
   }
-  .info {
+  .about li {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1201,7 +1201,7 @@ aside {
             align-items: center;
     text-align: center;
   }
-  .info .info-icon i {
+  .about-icon i {
     margin: 0 0 20px 0;
   }
   .contest-text {

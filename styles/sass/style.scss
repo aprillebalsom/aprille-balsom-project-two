@@ -1,5 +1,5 @@
-//VARIABLE DECLARATIONS
-//COLORS
+// VARIABLE DECLARATIONS
+// colors
 $accent-color: #50E3C2;
 $primary-bg-color: #50E3C250;
 $primary-text-color: #2C2C2C;
@@ -8,7 +8,7 @@ $button-color: #063974;
 $light-blue: #D2E9F150;
 $secondary-text-color: #0C5F4C;
 
-// FONTS
+// fonts
 $primary-font:'Lato', sans-serif;
 $secondary-font:'Playfair Display SC', serif;
 
@@ -55,7 +55,7 @@ $secondary-font:'Playfair Display SC', serif;
 
 //HOME PAGE PARTIALS
 @import "home-visit-gallery-about";
-@import "home-news-giveaway";
+@import "home-news-contest";
 
 //ADDITIONAL PAGE PARTIALS
 @import "blog-post";
@@ -65,7 +65,7 @@ $secondary-font:'Playfair Display SC', serif;
 @import "mediaqueries";
 
 
-//GLOBAL STYLES
+//GLOBAL STYLES START
 html {
     font-size: 62.5%;
 }
@@ -154,7 +154,7 @@ button {
 
 textarea {
     border: 2px solid $accent-color;
-    
+
     padding: 25px 0 0 25px;
     resize: none;
 }

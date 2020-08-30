@@ -9,7 +9,9 @@
             font-size: 6rem;
             text-align: center;
             line-height: 80px;
+
             width: 100%;
+
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -170,7 +172,7 @@
 
     //HOMEPAGE STYLES
     .visit-container,
-    .info-container {
+    .about ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -178,7 +180,7 @@
 
     .visit-container{
 
-         .visit-img {
+        .visit-img {
             width: 80%;
         }
 
@@ -190,11 +192,10 @@
 
     }
 
-    .info-container {
-        .info {
-            width: 100%;
-        }
+    .about ul li {
+        width: 100%;
     }
+
 
     .contest-container {
 
@@ -340,15 +341,15 @@
         }
     }
 
-    .info {
+    .about li {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
+    }
 
-        .info-icon i {
-            margin: 0 0 20px 0;
-        }
+    .about-icon i {
+        margin: 0 0 20px 0;
     }
 
     .contest-text {
