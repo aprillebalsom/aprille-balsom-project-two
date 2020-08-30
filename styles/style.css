@@ -354,7 +354,7 @@ header ul a:hover, header ul a:focus {
 .mobile-nav i {
   color: #FAFFFE;
   font-size: 4rem;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 nav input[type="checkbox"] {
@@ -1131,6 +1131,10 @@ aside {
     width: 100%;
     padding: 20px;
   }
+  .contact-form {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
 /* Landscape phones and down */
@@ -1148,8 +1152,11 @@ aside {
   .contact-header {
     height: 50vh;
   }
-  header nav .logo {
-    display: none;
+  header nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .mobile-nav {
     display: block;
@@ -1162,7 +1169,7 @@ aside {
     position: absolute;
     right: 0;
     left: 0;
-    top: 0;
+    top: -100px;
     z-index: 10;
     -webkit-transition: all .5s;
     transition: all .5s;
@@ -1177,7 +1184,7 @@ aside {
     font-size: 1.6rem;
   }
   nav input[type="checkbox"]:checked + .hamburger-nav {
-    top: -100px;
+    top: 0px;
   }
   .home-header-main h1 {
     font-size: 3rem;
@@ -1213,6 +1220,7 @@ aside {
     padding-bottom: 20px;
   }
   .about li {
+    text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1223,7 +1231,6 @@ aside {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    text-align: center;
   }
   .about-icon i {
     margin: 0 0 20px 0;

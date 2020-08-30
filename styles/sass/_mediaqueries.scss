@@ -154,7 +154,6 @@
             input {
                 width: 100%;
             }
-
         }
     }
 
@@ -189,7 +188,6 @@
             width: 100%;
             order: 1;
         }
-
     }
 
     .about ul li {
@@ -208,7 +206,6 @@
         p {
             width: 100%;
         }
-
     }
 
 
@@ -260,14 +257,18 @@
             padding: 20px;
         }
     }  
+
+    // CONTACT STYLES
+    .contact-form {
+        box-shadow: none;
+    }
 }
 
 
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
-    //GLOBAL STYLES
-    // TODO check if this is working
+   // GLOBAL STYLES
     .contest-text h2 {
         font-size: 3rem;
         line-height: 40px;
@@ -286,9 +287,7 @@
     }
 
     header nav {
-        .logo {
-            display: none;
-        }
+        flex-direction: row;
     }
 
     // MOBILE NAV FUNCTIONALITY
@@ -306,7 +305,7 @@
         position: absolute;
         right: 0;
         left: 0;
-        top: 0;
+        top: -100px;
         z-index: 10;
 
         transition: all .5s;
@@ -323,13 +322,12 @@
                 color: #FFF;
 
                 font-size: 1.6rem;
-
             }
         }   
     }
 
     nav input[type="checkbox"]:checked + .hamburger-nav {
-        top: -100px;
+        top: 0px;
     }
 
     .home-header-main {
@@ -341,7 +339,6 @@
             .header-logo-special {
                 font-size: 4.6rem;
             }
-
         }
     }
 
@@ -374,10 +371,11 @@
     }
 
     .about li {
+        text-align: center;
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
     }
 
     .about-icon i {
@@ -400,12 +398,15 @@
 
         .blog-main-img {
             width: 100%;
+
             box-shadow: none;
         }
 
         .blog-post-text {
             border: none;
+
             text-align: center;
+
             padding: 40px 0 0 0;
 
             h2 {
@@ -417,7 +418,9 @@
 
     .comments-content {
         border: 3px solid $accent-color;
+        
         text-align: center;
+
         width: 100%;
         padding: 20px;
 
