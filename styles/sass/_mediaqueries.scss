@@ -51,35 +51,33 @@
 
     //HOMEPAGE STYLES
     .news-container {
-        // padding-bottom: 20px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
 
-        .news-img {
-            width: 80%;
+    .news-img {
+        width: 80%;
 
-            .news-img-1,
-            .news-img-2 {
-                position: static;
-                margin: 0;
-            }
+        .news-img-1,
+        .news-img-2 {
+            position: static;
+            margin: 0;
         }
+    }
 
-        .special-img {
-            order: 0;
-        }
+    .special-img {
+        order: 0;
+    }
 
-        .news-text {
-            width: 100%;
-        }
+    .news-text {
+        width: 100%;
+    }
 
-        .text-right,
-        .text-left {
-            padding: 40px;
-            text-align: center;
-        }
-
+    .text-right,
+    .text-left {
+        padding: 40px;
+        text-align: center;
     }
 
     //BLOG PAGE STYLES
@@ -144,7 +142,7 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-    //GENERAL FORM STYLES
+    //GLOBAL FORM STYLES
     .comments-form,
     .contact-form {
 
@@ -162,46 +160,56 @@
     .home-header-main {
 
         h1 {
-        font-size: 5rem;
+            font-size: 5rem;
 
             .header-logo-special {
                 font-size: 7rem;
             }
         }
-
-        // .home-header-img {
-        //     width: 50%;
-        //    bottom: 40px;
-
-        // }
     }
 
     //HOMEPAGE STYLES
-    //TODO fix how it is oragnized
     .visit-container,
     .info-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
 
-        .visit-img {
+    .visit-container{
+
+         .visit-img {
             width: 80%;
         }
 
-        .visit-text,
+        .visit-text{
+            text-align: center;
+            width: 100%;
+            order: 1;
+        }
+
+    }
+
+    .info-container {
         .info {
             width: 100%;
         }
-        
-        .visit-text{
-            order: 1;
-            text-align: center;
-        }
     }
 
-    .contest-text p {
-        width: 100%;
+    .contest-container {
+
+        img {
+            height: 30vh;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        p {
+            width: 100%;
+        }
+
     }
+
 
     //BLOG PAGE STYLES
     .blog-container {
@@ -258,9 +266,9 @@
 /* Landscape phones and down */
 @media (max-width: 500px) {
 
-    //GENERAL STYLES
+    //GLOBAL STYLES
     // TODO check if this is working
-    h2 {
+    .contest-text h2 {
         font-size: 3rem;
         line-height: 40px;
     }
@@ -292,10 +300,6 @@
     }
 
     .home-header-main {
-    
-        // .home-header-img {
-        //     display: none;
-        // }
 
         h1 {
             font-size: 3rem;
@@ -347,12 +351,6 @@
         }
     }
 
-    .contest-img img {
-        height: 30vh;
-        object-fit: cover;
-        object-position: top;
-    }
-
     .contest-text {
         padding: 50px 0;
     }
@@ -383,7 +381,6 @@
             }
         }
     }
-
 
     .comments-content {
         border: 3px solid $accent-color;

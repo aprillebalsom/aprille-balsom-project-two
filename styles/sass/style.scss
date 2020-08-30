@@ -40,7 +40,7 @@ $secondary-font:'Playfair Display SC', serif;
     line-height: 58px;
 }
 
-@mixin logo-variations($color, $size) {
+@mixin logo-variations ($color, $size){
     color: $color;
     font-family: $secondary-font;
     font-size: $size;
@@ -64,7 +64,8 @@ $secondary-font:'Playfair Display SC', serif;
 //MEDIA QUERIES PARTIAL
 @import "mediaqueries";
 
-//GENERAL STYLES
+
+//GLOBAL STYLES
 html {
     font-size: 62.5%;
 }
@@ -88,12 +89,14 @@ p {
 .button {
     background-color: $button-color;
     color: $secondary-bg-color;
+
     font-family: $secondary-font;
     font-size: 2rem;
     font-weight: bolder;
     text-align: center;
     letter-spacing: 1px;
     line-height: 32px;
+
     padding: 10px;
     margin: 5px 0;
     display: inline-block;
@@ -107,20 +110,24 @@ p {
 .skip-link {
     background-color: $button-color;
     color: $secondary-bg-color;
+    
     text-align: center;
+
     border-radius: 4px;
     width: 225px;
     padding: 3px;
+
     position: absolute;
     left: -1000px;
     top: 3px;
     z-index: 20;
+
     &:focus {
         left: 40%;
     }
 }
 
-// GENERAL FORM STYLES
+// GLOBAL FORM STYLES
 .form-flex {
     display: flex;
     justify-content: space-between;
@@ -147,10 +154,11 @@ button {
 
 textarea {
     border: 2px solid $accent-color;
+    
     padding: 25px 0 0 25px;
     resize: none;
 }
-//GENERAL FORM STYLES END
-// GENERAL STYLES END
+//GLOBAL FORM STYLES END
+// GLOBAL STYLES END
 
 
