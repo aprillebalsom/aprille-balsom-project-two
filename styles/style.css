@@ -849,6 +849,12 @@ aside {
 
 .contact-info .contact-icons i {
   padding: 10px 20px 10px 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.contact-info .contact-icons i:hover {
+  color: #50E3C2;
 }
 
 .contact-info .contact-text h4 {
