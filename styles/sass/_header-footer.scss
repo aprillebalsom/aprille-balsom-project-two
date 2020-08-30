@@ -28,16 +28,6 @@ header {
     }
 }
 
-// .mobile-nav {
-//     display: none;
-
-//     i {
-//         color: $secondary-bg-color;
-//         font-size: 4rem;
-//     }
-
-// }
-
 header ul a {
     color: $secondary-bg-color;
     text-transform: uppercase;
@@ -56,6 +46,23 @@ header ul a {
     }
 }
 
+// MOBILE NAV STYLES
+.mobile-nav {
+    display: none;
+
+    i {
+        color: $secondary-bg-color;
+
+        font-size: 4rem;
+
+        padding-top: 10px;
+    }
+
+}
+
+nav input[type="checkbox"] {
+    display: none; 
+}
 
 // HOME HEADER STYLES
 .home-header {
