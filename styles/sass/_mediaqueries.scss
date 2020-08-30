@@ -203,7 +203,6 @@
         width: 100%;
     }
 
-
     .contest {
 
         img {
@@ -348,18 +347,15 @@
         top: 0px;
     }
 
-    .home-header-main {
-
-        h1 {
-            font-size: 3rem;
-            line-height: 25px;
-          
-            .header-logo-special {
-                font-size: 4.6rem;
-            }
+    .home-header-main h1 {
+        font-size: 3rem;
+        line-height: 25px;
+        
+        .header-logo-special {
+            font-size: 4.6rem;
         }
     }
-
+    
     .blog-header-main,
     .contact-header-main {
         
@@ -457,5 +453,4 @@
         }
     }
 }
-
 //END OF MEDIA QUERIES

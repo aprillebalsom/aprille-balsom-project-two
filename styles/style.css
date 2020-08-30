@@ -850,23 +850,23 @@ aside {
           flex-direction: column;
 }
 
-.contact-info .contact-icons {
+.contact-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact-info .contact-icons i {
+.contact-icons i {
   padding: 10px 20px 10px 0;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.contact-info .contact-icons i:hover {
+.contact-icons i:hover {
   color: #50E3C2;
 }
 
-.contact-info .email-info {
+.email-info {
   font-weight: bold;
   letter-spacing: 3px;
   padding: 10px 0 15px;

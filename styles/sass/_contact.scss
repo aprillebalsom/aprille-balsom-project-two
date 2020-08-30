@@ -38,32 +38,32 @@
 
 .contact-info {
     width: calc(25% - 30px);
-     padding-top: 80px;
+    padding-top: 80px;
 
     display: flex;
     flex-direction: column;
-  
-    .contact-icons {
-        display: flex;
+}   
 
-        i {
-            padding: 10px 20px 10px 0;
+.contact-icons {
+    display: flex;
 
-            transition: all .5s;
+    i {
+        padding: 10px 20px 10px 0;
 
-            &:hover { 
-                color: $accent-color;
-            }
+        transition: all .5s;
+
+        &:hover { 
+            color: $accent-color;
         }
-
     }
-
-    .email-info {
-        font-weight: bold;
-        letter-spacing: 3px;
-
-        padding: 10px 0 15px;
-    }
-
 }
+
+.email-info {
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    padding: 10px 0 15px;
+}
+
+
 
