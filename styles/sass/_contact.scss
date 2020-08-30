@@ -1,6 +1,7 @@
 //CONTACT STYLES
 .contact-main {
     background-color: $secondary-bg-color;
+
     margin-bottom: -50px;
 }
 
@@ -12,8 +13,10 @@
 .contact-form {
     background-color: white;
     box-shadow: 15px 15px $accent-color;
+
     width: calc(75% - 30px);
     padding: 50px;
+
     position: relative;
     top: -150px;
     left: -50px;
@@ -35,15 +38,17 @@
 
 .contact-info {
     width: calc(25% - 30px);
+     padding-top: 80px;
+
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
   
     .contact-icons {
         display: flex;
 
         i {
             padding: 10px 20px 10px 0;
+
             transition: all .5s;
 
             &:hover { 
@@ -53,10 +58,11 @@
 
     }
 
-    .contact-text {
-        h4 {
-            padding: 10px 0 15px;
-        }
+    .email-info {
+        font-weight: bold;
+        letter-spacing: 3px;
+
+        padding: 10px 0 15px;
     }
 
 }

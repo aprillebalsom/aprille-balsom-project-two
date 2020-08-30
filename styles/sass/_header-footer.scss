@@ -1,7 +1,5 @@
 //GENERAL HEADER STYLES
-.home-header,
-.blog-header,
-.contact-header {
+header {
     background-size: cover;
     height: 90vh;
 }
@@ -11,7 +9,7 @@
 	flex-direction: column;
     height: 100%;
     
-    .header-top {
+    nav {
         padding-top: 40px;
         display: flex;
         justify-content: space-between;
@@ -30,17 +28,17 @@
     }
 }
 
-.mobile-nav {
-    display: none;
+// .mobile-nav {
+//     display: none;
 
-    .hamburger-icon {
-        color: $secondary-bg-color;
-        font-size: 4rem;
-    }
+//     i {
+//         color: $secondary-bg-color;
+//         font-size: 4rem;
+//     }
 
-}
+// }
 
-.header-top a {
+header ul a {
     color: $secondary-bg-color;
     text-transform: uppercase;
     font-size: 2rem;

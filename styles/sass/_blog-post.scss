@@ -1,6 +1,7 @@
 //BLOG POST STYLES
 .blog-post {
     background-color: $secondary-bg-color;
+    
     display: flex;
     justify-content: space-between;
 }
@@ -8,6 +9,7 @@
 .blog-container {
     width: calc(70% - 80px);
     margin-bottom: -120px;
+
     position: relative;
     top: -200px;
 }
@@ -19,6 +21,7 @@
 
     .blog-main-img {
         box-shadow: 15px 15px $accent-color;  
+
         position: relative;
         right: 15px;
     }
@@ -26,9 +29,11 @@
 }
 
 .blog-post-text {
-    padding: 80px 0 40px 40px;
     border-right: 5px solid $accent-color;
     border-bottom: 5px solid $accent-color;
+
+    padding: 80px 0 40px 40px;
+  
 
     h2 {
         @include custom-h2 ($secondary-text-color);
@@ -36,8 +41,10 @@
 
     .date {
         color: $button-color;
+
         font-weight: lighter;
         font-style: italic;
+
         padding-top: 0;
          
         .highlight {
@@ -56,14 +63,16 @@
 
     h3 {
         @include custom-h3 ($primary-text-color, 2.8rem, bolder);
+
         padding-bottom: 40px;
     }
 }
 
 .comment {
+    padding-bottom: 80px;
+
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
 
     .comment-img {
         width: calc(20% - 20px);
@@ -74,6 +83,7 @@
 
         h4 {
             color: $button-color;
+
             padding-bottom: 10px;
         }
     }
@@ -94,6 +104,7 @@
     input,
     textarea {
         background-color: $secondary-bg-color;
+
         margin-bottom: 30px; 
     }
     
@@ -114,20 +125,23 @@ aside {
 
     h4 {
         color: $button-color;
+
         padding: 10px 0;
     }
+}
 
-    a {
-        color: $secondary-text-color;
+.mission a{
+    color: $secondary-text-color;    
+}
+   
+.recent-posts li {
+    font-weight: 300;
+
+    &::before {
+        content: "•";
+        color: $accent-color;
+        
+        padding-right: 10px;
     }
 
-    li {
-       font-weight: 300;
-
-       &::before {
-            content: "•";
-            color: $accent-color;
-            padding-right: 10px;
-        }
-    }
 }

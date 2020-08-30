@@ -28,7 +28,7 @@
 @media (max-width: 940px) {
 
     //HEADER STYLES
-    .header-top {
+    header nav {
         flex-direction: column;
         align-items: flex-start;
 
@@ -52,7 +52,7 @@
     }
 
     //HOMEPAGE STYLES
-    .news-container {
+    .news {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -197,7 +197,7 @@
     }
 
 
-    .contest-container {
+    .contest {
 
         img {
             height: 30vh;
@@ -259,8 +259,7 @@
             width: 100%;
             padding: 20px;
         }
-    }
-    
+    }  
 }
 
 
@@ -286,18 +285,18 @@
         height: 50vh;
     }
 
-    .header-top {
+    header nav {
         .logo {
             display: none;
         }
 
-        .mobile-nav {
-            display: block;
-        }
+        // .mobile-nav {
+        //     display: block;
+        // }
 
-        ul a {
-            display: none;
-        }
+        // ul a {
+        //     display: none;
+        // }
     }
 
     .home-header-main {
@@ -400,16 +399,73 @@
     }
 
     .aside-text {
-
+        a,
         li {
             font-size: 1.6rem;
         }
     }
 
+    // HAMBURGER NAV FUNCTIONALITY
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .hamburger-nav {
+        background: #F7DAE8;
+        border-radius: 3px;
+        height: 180px;
+        padding: 20px 0;
+        width: 100px; 
+        position: fixed;
+        right: 80px;
+        top: -180px;
+        z-index: 10;
+        transition: all 0.7s;
+    }
+
+    .hamburger-nav a {
+        color: #210E21;
+        font-size: 2rem;
+        text-align: center;
+        width: 100%;
+        padding: 5px;
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+            background-color:
+        }
+    } 
+
+   
+    nav input[type="checkbox"] {
+        display: none; 
+    }
+
+   nav input[type="checkbox"]:checked + .hamburger-nav {
+        top: 0;
+    }
+
+    //nav label[for="mobile-nav"]
+    .mobile-nav {
+        color: #FFF;
+        // position: static;
+        // top: 20px;
+        // right: 20px; 
+    }
+
+    .mobile-nav {
+    // display: none;
+    // position: static;
+
+    i {
+        color: $secondary-bg-color;
+        font-size: 4rem;
+    }
+
+}
+
 }
 
 //END OF MEDIA QUERIES
-
-
-//NOTES
-// TODO - add padding-bottom to blog grid section

@@ -278,9 +278,7 @@ fieldset {
   margin: 0;
 }
 
-.home-header,
-.blog-header,
-.contact-header {
+header {
   background-size: cover;
   height: 90vh;
 }
@@ -296,7 +294,7 @@ fieldset {
   height: 100%;
 }
 
-.header-container .header-top {
+.header-container nav {
   padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,7 +307,7 @@ fieldset {
           align-items: center;
 }
 
-.header-container .header-top .logo {
+.header-container nav .logo {
   color: #50E3C2;
   font-family: "Playfair Display SC", serif;
   font-size: 3.46rem;
@@ -319,7 +317,7 @@ fieldset {
   padding-left: 0;
 }
 
-.header-container .header-top ul {
+.header-container nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,16 +329,7 @@ fieldset {
           align-items: center;
 }
 
-.mobile-nav {
-  display: none;
-}
-
-.mobile-nav .hamburger-icon {
-  color: #FAFFFE;
-  font-size: 4rem;
-}
-
-.header-top a {
+header ul a {
   color: #FAFFFE;
   text-transform: uppercase;
   font-size: 2rem;
@@ -353,7 +342,7 @@ fieldset {
   transition: all .5s;
 }
 
-.header-top a:hover, .header-top a:focus {
+header ul a:hover, header ul a:focus {
   color: #50E3C2;
   font-size: 2.2rem;
 }
@@ -553,9 +542,6 @@ footer {
 .news {
   background-color: #50E3C250;
   padding-top: 80px;
-}
-
-.news-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,10 +606,13 @@ footer {
   padding: 0 80px 0 15px;
 }
 
+.contest {
+  background-color: secondary-bg-color;
+}
+
 .contest-text {
-  background-color: #FAFFFE;
-  padding: 100px 0 120px;
   text-align: center;
+  padding: 100px 0 120px;
 }
 
 .contest-text h2 {
@@ -679,9 +668,9 @@ footer {
 }
 
 .blog-post-text {
-  padding: 80px 0 40px 40px;
   border-right: 5px solid #50E3C2;
   border-bottom: 5px solid #50E3C2;
+  padding: 80px 0 40px 40px;
 }
 
 .blog-post-text h2 {
@@ -723,13 +712,13 @@ footer {
 }
 
 .comment {
+  padding-bottom: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 80px;
 }
 
 .comment .comment-img {
@@ -782,17 +771,14 @@ aside {
   padding: 10px 0;
 }
 
-.mission a,
-.recent-posts a {
+.mission a {
   color: #0C5F4C;
 }
 
-.mission li,
 .recent-posts li {
   font-weight: 300;
 }
 
-.mission li::before,
 .recent-posts li::before {
   content: "•";
   color: #50E3C2;
@@ -840,6 +826,7 @@ aside {
 
 .contact-info {
   width: calc(25% - 30px);
+  padding-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,7 +834,6 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 80px;
 }
 
 .contact-info .contact-icons {
@@ -866,7 +852,9 @@ aside {
   color: #50E3C2;
 }
 
-.contact-info .contact-text h4 {
+.contact-info .email-info {
+  font-weight: bold;
+  letter-spacing: 3px;
   padding: 10px 0 15px;
 }
 
@@ -894,7 +882,7 @@ aside {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .header-top {
+  header nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -903,7 +891,7 @@ aside {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .header-top ul a {
+  header nav ul a {
     padding: 20px;
   }
   .blog-header-main,
@@ -920,7 +908,7 @@ aside {
   .home-header-img {
     display: none;
   }
-  .news-container {
+  .news {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1071,14 +1059,14 @@ aside {
   .about ul li {
     width: 100%;
   }
-  .contest-container img {
+  .contest img {
     height: 30vh;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: top;
        object-position: top;
   }
-  .contest-container p {
+  .contest p {
     width: 100%;
   }
   .blog-container {
@@ -1146,13 +1134,7 @@ aside {
   .contact-header {
     height: 50vh;
   }
-  .header-top .logo {
-    display: none;
-  }
-  .header-top .mobile-nav {
-    display: block;
-  }
-  .header-top ul a {
+  header nav .logo {
     display: none;
   }
   .home-header-main h1 {
@@ -1252,8 +1234,50 @@ aside {
     width: 45%;
     padding-bottom: 20px;
   }
+  .aside-text a,
   .aside-text li {
     font-size: 1.6rem;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .hamburger-nav {
+    background: #F7DAE8;
+    border-radius: 3px;
+    height: 180px;
+    padding: 20px 0;
+    width: 100px;
+    position: fixed;
+    right: 80px;
+    top: -180px;
+    z-index: 10;
+    -webkit-transition: all 0.7s;
+    transition: all 0.7s;
+  }
+  .hamburger-nav a {
+    color: #210E21;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+  }
+  .hamburger-nav a:hover,
+  .hamburger-nav a:focus {
+    background: #FFF;
+  }
+  nav input[type="checkbox"] {
+    display: none;
+  }
+  nav input[type="checkbox"]:checked + .hamburger-nav {
+    top: 0;
+  }
+  .mobile-nav {
+    color: #FFF;
+  }
+  .mobile-nav i {
+    color: #FAFFFE;
+    font-size: 4rem;
   }
 }
 
